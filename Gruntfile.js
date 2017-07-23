@@ -20,12 +20,12 @@ module.exports = function(grunt) {
         sass: {
         	all: {
         		files: {
-        			'src/css/style.css' : 'src/sass/style.scss'
+        			'src/css/style.css' : 'src/sass/style.sass'
         		}
         	}
         },
         watch: {
-        	files: ['src/**/*.js', 'src/**/*.scss'],
+        	files: ['src/**/*.js', 'src/**/*.sass'],
         	tasks: ['jshint', 'uglify', 'sass']
         }
     });
