@@ -43,4 +43,5 @@ module.exports = function(grunt) {
         }
     });
     grunt.registerTask('default', ['jshint:all', 'uglify:all', 'sass:all', 'cssmin:target', 'watch']);
+    grunt.registerTask('build', ['jshint:all', 'uglify:all', 'sass:all', 'cssmin:target']);
 };
