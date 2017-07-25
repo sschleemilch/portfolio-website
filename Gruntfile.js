@@ -3,6 +3,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
  	grunt.loadNpmTasks('grunt-newer');
 
     grunt.initConfig({
@@ -25,10 +26,21 @@ module.exports = function(grunt) {
         		}
         	}
         },
+       cssmin: {
+        target: {
+            files: [{
+                expand: true,
+                cwd: 'src/css',
+                src: ['*.css', '!*.min.css'],
+                dest: 'src/css',
+                ext: '.min.css'
+            }]
+        }
+        },
         watch: {
-        	files: ['src/js/**/*.js', 'src/**/*.sass'],
-        	tasks: ['newer:jshint:all', 'newer:uglify:all', 'newer:sass:all']
+        	files: ['src/js/**/*.js', 'src/sass/*.sass'],
+        	tasks: ['newer:jshint:all', 'newer:uglify:all', 'sass:all', 'newer:cssmin:target']
         }
     });
-    grunt.registerTask('default', ['jshint:all', 'uglify:all', 'sass:all', 'watch']);
+    grunt.registerTask('default', ['jshint:all', 'uglify:all', 'sass:all', 'cssmin:target', 'watch']);
 };
