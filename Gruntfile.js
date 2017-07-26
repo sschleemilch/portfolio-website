@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         }
         },
         watch: {
-        	files: ['src/js/**/*.js', 'src/sass/*.sass'],
+        	files: ['src/js/**/*.js', 'src/sass/**/*.sass'],
         	tasks: ['newer:jshint:all', 'newer:uglify:all', 'sass:all', 'newer:cssmin:target']
         }
     });
