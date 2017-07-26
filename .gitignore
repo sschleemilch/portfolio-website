@@ -1,4 +1,5 @@
 node_modules
 .sass-cache
-src/css/*
+src/css/*.min.css
+src/css/style.*
 jsm
