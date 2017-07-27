@@ -1,4 +1,4 @@
-## Portfolio Website discovering web technologies and see how it evolves
+## Portfolio Website
 
 # Setup
 Basically you only need a few preinstalled tools to develop on this project:
