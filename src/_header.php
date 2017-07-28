@@ -24,8 +24,8 @@
 		<navbar class="navbar has-shadow">
 			<div class="container">
 				<div class="navbar-brand">
-					<a class="navbar-item" href="index.html">
-						<img src="img/logo_schleemilch_small.png" alt="Schleemilch:Sebastian" width="179" height="28">
+					<a class="navbar-item" href="index.php">
+						<img src="img/logo_schleemilch_small.png" alt="Schleemilch:Sebastian" width="200" height="28">
 					</a>
 				</div>
 				<div class="navbar-burger">
@@ -35,7 +35,7 @@
 	    		</div>
 	    		<div class="navbar-menu">
 	    			<div class="navbar-start">
-	    				<a class="navbar-item is-active"> 
+	    				<a href="home.php" class="navbar-item <?php if(isset($home)){echo $home;} ?>"> 
 	    					<span class="icon">
 	  							<i class="fa fa-home"></i>
 							</span>
@@ -43,7 +43,15 @@
 	    						Home
 	    					</span> 
 						</a>
-	    			</div>
+						<a href="profile.php" class="navbar-item <?php if(isset($profile)){echo $profile;} ?>"> 
+	    					<span class="icon">
+	  							<i class="fa fa-home"></i>
+							</span>
+							<span>
+	    						Profile
+	    					</span> 
+						</a>
+	    			</div>	
 	    			<div class="navbar-end">
 	    				<div class="navbar-item">
 	    					<a class="button is-primary is-outlined">
@@ -59,47 +67,3 @@
 	    		</div>
     		</div>
 		</navbar>
-		<section class="hero is-large is-dark has-text-centered">
-		<div class="hero-body">
-			<h1 class="title">Section::Hero Large Title Dark<strong>Strong</strong></h1>
-			<h2 class="subtitle">Subtitle</h2>
-		</div>
-		</section>
-		<section class="hero is-small is-warning">
-		<div class="hero-body">
-		<div class="container">
-			<h1 class="title">Section::Hero Small Title</h1>
-			<h2 class="subtitle"> Subtitle </h2>
-		</div>
-		</div>
-		</section>
-		<section class="section">
-			<div class="container">
-				<h1 class="title">Section Title</h1>
-				<h2 class="subtitle">Section Subtitle</h2>
-				<p> Section text </p>
-				<a class="button is-primary">
-	  				Button
-				</a>
-				<a class="button is-info">
-				  Button
-				</a>
-				<a class="button is-success">
-				  Button
-				</a>
-				<a class="button is-warning">
-				  Button
-				</a>
-				<a class="button is-danger" disabled>
-				  Button
-				</a>
-			</div>
-		</section>
-		
-		<footer class="footer has-shadow">
-			<div class="container has-text-centered">
-				Footer
-			</div>
-		</footer>
-	</body>
-</html>
