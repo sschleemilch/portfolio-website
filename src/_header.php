@@ -24,8 +24,8 @@
 		<navbar class="navbar has-shadow">
 			<div class="container">
 				<div class="navbar-brand">
-					<a class="navbar-item" href="index.php">
-						<img src="img/logo_schleemilch_small.png" alt="Schleemilch:Sebastian" width="200" height="28">
+					<a name="to-top" class="navbar-item" href="index.php">
+						<img src="img/logo_schleemilch_small_milk.png" alt="Schleemilch:Sebastian" width="70" height="28">
 					</a>
 				</div>
 				<div class="navbar-burger">
@@ -40,15 +40,15 @@
 	  							<i class="fa fa-home"></i>
 							</span>
 							<span>
-	    						Home
+	    						&nbsp;Home
 	    					</span> 
 						</a>
 						<a href="profile.php" class="navbar-item <?php if(isset($profile)){echo $profile;} ?>"> 
 	    					<span class="icon">
-	  							<i class="fa fa-home"></i>
+	  							<i class="fa fa-vcard-o"></i>
 							</span>
 							<span>
-	    						Profile
+	    						&nbsp;Profile
 	    					</span> 
 						</a>
 	    			</div>	

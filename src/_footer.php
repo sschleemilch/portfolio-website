@@ -1,6 +1,48 @@
-		<footer class="footer has-shadow">
-			<div class="container has-text-centered">
-				Footer
+		<footer class="footer">
+			<div class="container">
+				<div class="columns has-text-centered">
+					<div class="column is-one-third">
+						<div class="content">
+							<a href="#to-top">
+							<span class="icon is-small">
+	  							<i class="fa fa-arrow-up"></i>
+							</span>
+							Back to top
+							</a>
+						</div>
+					</div>
+					<div class="column is-one-third">
+						<div class="content">
+							<p>
+								Sebastian Schleemilch &copy; 2017 <br>
+								<small>
+								Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.<br>
+								Website content licensed <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+								</small>
+							</p>
+						</div>
+					</div>
+					<div class="column is-one-third">
+						<div class="content">
+	  						<a href="https://github.com/sschleemilch">
+	  							<span class="icon is-medium" style="color: #333;"><i class="fa fa-github"></i>
+								</span>
+							</a>
+	  						<a href="https://www.facebook.com/sebastian.schleemilch">
+	  							<span class="icon is-medium" style="color: #3b5998;"><i class="fa fa-facebook-square"></i>
+								</span>
+							</a>
+	  						<a href="https://www.xing.com/profile/Sebastian_Schleemilch2?sc_o=mxb_p">
+	  							<span class="icon is-medium" style="color: #126567;"><i class="fa fa-xing-square"></i>
+								</span>
+							</a>
+							<a href="https://www.linkedin.com/in/sschleemilch/">
+								<span class="icon is-medium" style="color: #0e76a8;"><i class="fa fa-linkedin-square"></i>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</footer>
 	</body>

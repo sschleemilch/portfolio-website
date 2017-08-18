@@ -5,8 +5,7 @@
 
 <section class="hero is-large is-dark has-text-centered">
 		<div class="hero-body">
-			<h1 class="title">Section::Hero Large Title Dark<strong>Strong</strong></h1>
-			<h2 class="subtitle">Subtitle</h2>
+			<h1 class="title">Welcome<br><strong><?php echo $_SERVER['REMOTE_ADDR'] ?>!</strong></h1>
 		</div>
 		</section>
 		<section class="hero is-small is-warning">
