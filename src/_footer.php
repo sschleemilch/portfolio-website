@@ -3,7 +3,7 @@
 				<div class="columns has-text-centered">
 					<div class="column is-one-third">
 						<div class="content">
-							<a href="#to-top">
+							<a href="#top">
 							<span class="icon is-small">
 	  							<i class="fa fa-arrow-up"></i>
 							</span>

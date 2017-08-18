@@ -24,7 +24,7 @@
 		<navbar class="navbar has-shadow">
 			<div class="container">
 				<div class="navbar-brand">
-					<a name="to-top" class="navbar-item" href="index.php">
+					<a name="top" class="navbar-item" href="index.php">
 						<img src="img/logo_schleemilch_small_milk.png" alt="Schleemilch:Sebastian" width="70" height="28">
 					</a>
 				</div>

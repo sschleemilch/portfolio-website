@@ -3,9 +3,15 @@
 	include '_header.php';
 ?>
 
-<section class="hero is-large is-dark has-text-centered">
+<section class="hero is-large is-light">
 		<div class="hero-body">
-			<h1 class="title">Welcome<br><strong><?php echo $_SERVER['REMOTE_ADDR'] ?>!</strong></h1>
+			<div class="container">
+			<div class="content has-text-centered">
+				<h1 class="title">Welcome <strong><?php echo $_SERVER['REMOTE_ADDR'] ?>!</strong></h1>
+				
+				<img src="img/logo_schleemilch_big_milk.png" alt="Schleemilch:Sebastian" width="890" height="332">
+				</div>
+			</div>
 		</div>
 		</section>
 		<section class="hero is-small is-warning">
