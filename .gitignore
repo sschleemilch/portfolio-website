@@ -3,3 +3,4 @@ node_modules
 src/css/*.min.css
 src/css/style.*
 jsm
+dist

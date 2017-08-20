@@ -5,6 +5,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
  	grunt.loadNpmTasks('grunt-newer');
+    grunt.loadNpmTasks('grunt-contrib-copy')
 
     grunt.initConfig({
         jshint: {
@@ -40,8 +41,19 @@ module.exports = function(grunt) {
         watch: {
         	files: ['src/js/**/*.js', 'src/sass/**/*.sass'],
         	tasks: ['newer:jshint:all', 'newer:uglify:all', 'sass:all', 'newer:cssmin:target']
+        },
+        copy: {
+            main:{
+               files: [
+                    {expand: true, flatten:true, src: ['src/css/*.min.css'], dest: 'dist/css'},
+                    {expand: true, flatten:true, src: ['src/img/*'], dest: 'dist/img'},
+                    {expand: true, flatten:true, src: ['src/jsm/*'], dest: 'dist/jsm'},
+                    {expand: true, flatten:true, src: ['src/*.php'], dest: 'dist/'},
+               ]
+            }
         }
     });
     grunt.registerTask('default', ['jshint:all', 'uglify:all', 'sass:all', 'cssmin:target', 'watch']);
     grunt.registerTask('build', ['jshint:all', 'uglify:all', 'sass:all', 'cssmin:target']);
+    grunt.registerTask('release', ['jshint:all', 'uglify:all', 'sass:all', 'cssmin:target', 'copy:main']);
 };
