@@ -1,8 +1,7 @@
 <?php
-	$profile = "is-active";
+	$projects = "is-active";
 	include '_header.php';
 ?>
-
 <section class="section">
 	<div class="container">
 	<div class="notification is-warning">
@@ -11,7 +10,6 @@
 	</div>
 	</div>
 </section>
-
 <?php
 	include '_footer.php';
 ?>

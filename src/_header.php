@@ -21,7 +21,7 @@
 
 	<!-- Body -->
 	<body>
-		<navbar class="navbar has-shadow">
+		<navbar class="navbar">
 			<div class="container">
 				<div class="navbar-brand">
 					<a name="top" class="navbar-item" href="index.php">
@@ -49,6 +49,22 @@
 							</span>
 							<span>
 	    						&nbsp;Profile
+	    					</span> 
+						</a>
+						<a href="projects.php" class="navbar-item <?php if(isset($projects)){echo $projects;} ?>"> 
+	    					<span class="icon">
+	  							<i class="fa fa-rocket"></i>
+							</span>
+							<span>
+	    						&nbsp;Projects
+	    					</span> 
+						</a>
+						<a href="tools.php" class="navbar-item <?php if(isset($tools)){echo $tools;} ?>"> 
+	    					<span class="icon">
+	  							<i class="fa fa-wrench"></i>
+							</span>
+							<span>
+	    						&nbsp;Tools
 	    					</span> 
 						</a>
 	    			</div>	
