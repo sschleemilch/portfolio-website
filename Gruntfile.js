@@ -45,10 +45,10 @@ module.exports = function(grunt) {
         copy: {
             main:{
                files: [
-                    {expand: true, flatten:true, src: ['src/css/*.min.css'], dest: 'dist/css'},
-                    {expand: true, flatten:true, src: ['src/img/*'], dest: 'dist/img'},
-                    {expand: true, flatten:true, src: ['src/jsm/*'], dest: 'dist/jsm'},
-                    {expand: true, flatten:true, src: ['src/*.php'], dest: 'dist/'},
+                    {expand: true, flatten:true, src: ['src/css/*.min.css'], dest: 'dist/html/css'},
+                    {expand: true, flatten:true, src: ['src/img/*'], dest: 'dist/html/img'},
+                    {expand: true, flatten:true, src: ['src/jsm/*'], dest: 'dist/html/jsm'},
+                    {expand: true, flatten:true, src: ['src/*.php'], dest: 'dist/html/'},
                ]
             }
         }
