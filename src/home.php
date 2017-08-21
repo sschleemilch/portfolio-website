@@ -21,13 +21,13 @@
 					<h1 class="title"><strong>What </strong> is this page <strong> about</strong>?</h1>
 					<br>
 					<div class="columns">
-						<a class="column" href="profile.php">
-							<span class="icon is-large" style="color: #3c8fff"><i class="fa fa-user-circle-o"></i></span>
+						<a class="column" href="profile_education.php">
+							<span class="icon is-large" style="color: #3273DC"><i class="fa fa-user-circle-o"></i></span>
 							<p class="title is-4"> <strong> Portfolio </strong> </p>
 							<p class="subtitle"> My past and present </p>
 						</a>
 						<a class="column" href="projects.php">
-							<span class="icon is-large" style="color: #ff5050"><i class="fa fa-rocket"></i></span>
+							<span class="icon is-large" style="color: #FF3860"><i class="fa fa-rocket"></i></span>
 							<p class="title is-4"> <strong> Projects </strong> </p>
 							<p class="subtitle">Current private projects</p>
 						</a>

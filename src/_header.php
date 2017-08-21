@@ -43,7 +43,7 @@
 	    						&nbsp;Home
 	    					</span> 
 						</a>
-						<a href="profile.php" class="navbar-item <?php if(isset($profile)){echo $profile;} ?>"> 
+						<a href="profile_education.php" class="navbar-item <?php if(isset($profile)){echo $profile;} ?>">
 	    					<span class="icon">
 	  							<i class="fa fa-vcard-o"></i>
 							</span>
