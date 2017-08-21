@@ -8,13 +8,13 @@
 	  <title>Sebastian Schleemilch</title>
 
 	  <!-- Main Style Sheet -->
-	  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+	  <link rel="stylesheet" type="text/css" href="/css/style.min.css">
 	  
 	  <!-- Font Awesome Style Sheet -->
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	  
 	  <!-- Favicon -->
-	  <link rel="icon" type="image/png" href="img/favicon.png">
+	  <link rel="icon" type="image/png" href="/img/favicon.png">
 
 	  <!-- Scripts -->
 	</head>
@@ -24,8 +24,8 @@
 		<navbar class="navbar">
 			<div class="container">
 				<div class="navbar-brand">
-					<a name="top" class="navbar-item" href="index.php">
-						<img src="img/logo_schleemilch_small_milk.png" alt="Schleemilch:Sebastian" width="70" height="28">
+					<a name="top" class="navbar-item" href="/index.php">
+						<img src="/img/logo_schleemilch_small_milk.png" alt="Schleemilch:Sebastian" width="70" height="28">
 					</a>
 				</div>
 				<div class="navbar-burger">
@@ -35,7 +35,7 @@
 	    		</div>
 	    		<div class="navbar-menu">
 	    			<div class="navbar-start">
-	    				<a href="home.php" class="navbar-item <?php if(isset($home)){echo $home;} ?>"> 
+	    				<a href="/home.php" class="navbar-item <?php if(isset($home)){echo $home;} ?>"> 
 	    					<span class="icon">
 	  							<i class="fa fa-home"></i>
 							</span>
@@ -43,7 +43,7 @@
 	    						&nbsp;Home
 	    					</span> 
 						</a>
-						<a href="profile_education.php" class="navbar-item <?php if(isset($profile)){echo $profile;} ?>">
+						<a href="/profile/education.php" class="navbar-item <?php if(isset($profile)){echo $profile;} ?>">
 	    					<span class="icon">
 	  							<i class="fa fa-vcard-o"></i>
 							</span>
@@ -51,7 +51,7 @@
 	    						&nbsp;Profile
 	    					</span> 
 						</a>
-						<a href="projects.php" class="navbar-item <?php if(isset($projects)){echo $projects;} ?>"> 
+						<a href="/projects.php" class="navbar-item <?php if(isset($projects)){echo $projects;} ?>"> 
 	    					<span class="icon">
 	  							<i class="fa fa-rocket"></i>
 							</span>
@@ -59,7 +59,7 @@
 	    						&nbsp;Projects
 	    					</span> 
 						</a>
-						<a href="tools.php" class="navbar-item <?php if(isset($tools)){echo $tools;} ?>"> 
+						<a href="/tools.php" class="navbar-item <?php if(isset($tools)){echo $tools;} ?>"> 
 	    					<span class="icon">
 	  							<i class="fa fa-wrench"></i>
 							</span>

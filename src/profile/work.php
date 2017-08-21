@@ -1,6 +1,8 @@
 <?php
 	$profile = "is-active";
-	include '_header.php';
+	$path = $_SERVER['DOCUMENT_ROOT'];
+	$path .= "/_header.php";
+	include_once($path)
 ?>
 
 <?php
@@ -19,5 +21,8 @@
 </section>
 
 <?php
-	include '/_footer.php';
+	$profile = "is-active";
+	$path = $_SERVER['DOCUMENT_ROOT'];
+	$path .= "/_footer.php";
+	include_once($path)
 ?>

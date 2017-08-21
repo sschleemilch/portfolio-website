@@ -10,10 +10,10 @@
 			<nav class="tabs is-boxed">
 				<ul>
 					<li class="<?php if(isset($profile_education)){echo $profile_education;} ?>">
-						<a href="profile_education.php">Education</a>
+						<a href="education.php">Education</a>
 					</li>
 					<li class="<?php if(isset($profile_work)){echo $profile_work;} ?>">
-						<a href="profile_work.php">Work</a>
+						<a href="work.php">Work</a>
 					</li>	
 				</ul>
 			</nav>

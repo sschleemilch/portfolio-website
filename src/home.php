@@ -1,6 +1,8 @@
 <?php
-	$home = "is-active";
-	include '_header.php';
+	$profile = "is-active";
+	$path = $_SERVER['DOCUMENT_ROOT'];
+	$path .= "/_header.php";
+	include_once($path)
 ?>
 
 <section class="hero is-primary">
@@ -10,7 +12,7 @@
 				<h2 class="subtitle">I know, your name would be more suitable. Still I hope that you will stay for some time <i class="fa fa-smile-o"></i></h2>
 				<br>
 				<div class="has-text-centered">
-				<img src="img/logo_schleemilch_big_milk.png" alt="Schleemilch:Sebastian" width="890" height="332">
+				<img src="/img/logo_schleemilch_big_milk.png" alt="Schleemilch:Sebastian" width="890" height="332">
 				</div>
 			</div>
 		</div>
@@ -21,17 +23,17 @@
 					<h1 class="title"><strong>What </strong> is this page <strong> about</strong>?</h1>
 					<br>
 					<div class="columns">
-						<a class="column" href="profile_education.php">
+						<a class="column" href="/profile/education.php">
 							<span class="icon is-large" style="color: #3273DC"><i class="fa fa-user-circle-o"></i></span>
 							<p class="title is-4"> <strong> Portfolio </strong> </p>
 							<p class="subtitle"> My past and present </p>
 						</a>
-						<a class="column" href="projects.php">
+						<a class="column" href="/projects.php">
 							<span class="icon is-large" style="color: #FF3860"><i class="fa fa-rocket"></i></span>
 							<p class="title is-4"> <strong> Projects </strong> </p>
 							<p class="subtitle">Current private projects</p>
 						</a>
-						<a class="column" href="tools.php">
+						<a class="column" href="/tools.php">
 							<span class="icon is-large" style="color: #9e9e9e"><i class="fa fa-wrench"></i></span>
 							<p class="title is-4"> <strong> Tools </strong> </p>
 							<p class="subtitle">Project results</p>
@@ -42,5 +44,8 @@
 		</section>
 
 <?php
-	include '_footer.php';
+	$profile = "is-active";
+	$path = $_SERVER['DOCUMENT_ROOT'];
+	$path .= "/_footer.php";
+	include_once($path)
 ?>

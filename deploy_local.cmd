@@ -1,0 +1,1 @@
+Robocopy.exe dist\html\ C:\wamp64\www\ /MIR
