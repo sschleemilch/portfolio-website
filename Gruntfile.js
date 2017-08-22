@@ -50,6 +50,7 @@ module.exports = function(grunt) {
                     {expand: true, flatten:true, src: ['src/jsm/*'], dest: 'dist/html/jsm'},
                     {expand: true, flatten:true, src: ['src/*.php'], dest: 'dist/html/'},
                     {expand: true, flatten:true, src: ['src/profile/*.php'], dest: 'dist/html/profile'},
+                    {expand: true, flatten:true, src: ['src/templates/*.php'], dest: 'dist/html/templates'},
                ]
             }
         }

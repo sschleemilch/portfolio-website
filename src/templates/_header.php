@@ -90,35 +90,35 @@
 						<span class="icon">
 	  						<i class="fa fa-home"></i>
 						</span>
-						<strong>Home</strong>
+						Home
 					</a>
 				</li>
 				<li><a href="/profile/education.php">
 						<span class="icon">
 	  						<i class="fa fa-vcard-o"></i>
 						</span>
-						<strong>Profile</strong>
+						Profile
 					</a>
 				</li>
 				<li><a href="/projects.php">
 						<span class="icon">
 	  						<i class="fa fa-rocket"></i>
 						</span>
-						<strong>Projects</strong>
+						Projects
 					</a>
 				</li>
 				<li><a href="/tools.php">
 						<span class="icon">
 	  						<i class="fa fa-wrench"></i>
 						</span>
-						<strong>Tools</strong>
+						Tools
 					</a>
 				</li>
 				<li><a href="/contact.php">
 						<span class="icon">
 	  						<i class="fa fa-envelope-o"></i>
 						</span>
-						<strong>Contact</strong>
+						Contact
 					</a>
 				</li>
 				<li><a href="javascript:void(0)" onclick="closeMobileNav()">
