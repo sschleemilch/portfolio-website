@@ -1,7 +1,7 @@
 <?php
 	$profile = "is-active";
 	$path = $_SERVER['DOCUMENT_ROOT'];
-	$path .= "/_header.php";
+	$path .= "/templates/_header.php";
 	include_once($path)
 ?>
 
@@ -23,6 +23,6 @@
 <?php
 	$profile = "is-active";
 	$path = $_SERVER['DOCUMENT_ROOT'];
-	$path .= "/_footer.php";
+	$path .= "/templates/_footer.php";
 	include_once($path)
 ?>
