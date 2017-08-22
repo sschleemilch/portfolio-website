@@ -1,7 +1,7 @@
-<section class="hero is-info is-medium">
+<section class="hero is-info">
 	<div class="hero-body">
 		<div class="container has-text-centered">
-			<span class="icon is-huge"><i class="fa fa-user-circle-o"></i></span>
+			<img src="/img/profile.png" alt="Schleemilch_Sebastian_Picture" width="200" height="200">
 			<h1 class="title"><strong>Profile</strong></h1>
 		</div>
 	</div>

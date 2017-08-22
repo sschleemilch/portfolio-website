@@ -1,5 +1,5 @@
 <?php
-	$profile = "is-active";
+	$projects = "is-active";
 	$path = $_SERVER['DOCUMENT_ROOT'];
 	$path .= "/templates/_header.php";
 	include_once($path)

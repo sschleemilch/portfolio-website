@@ -44,14 +44,24 @@
 	    						&nbsp;Home
 	    					</span> 
 						</a>
-						<a href="/profile/education.php" class="navbar-item <?php if(isset($profile)){echo $profile;} ?>">
-	    					<span class="icon">
-	  							<i class="fa fa-vcard-o"></i>
-							</span>
-							<span>
-	    						&nbsp;Profile
-	    					</span> 
-						</a>
+						<div class="navbar-item has-dropdown is-hoverable">
+	    					<a class=navbar-link <?php if(isset($profile)){echo $profile;}?>>
+		    					<span class="icon">
+		  							<i class="fa fa-vcard-o"></i>
+								</span>
+								<span>
+		    						&nbsp;Profile
+		    					</span>
+	    					</a>
+	    					<div class="navbar-dropdown">
+	    						<a href="/profile/education.php" class="navbar-item <?php if(isset($profile_education)){echo $profile_education;}?>">
+	    							Education
+	    						</a>
+	    						<a href="/profile/work.php" class="navbar-item <?php if(isset($profile_work)){echo $profile_work;}?>">
+	    							Work
+	    						</a>
+	    					</div>
+						</div>
 						<a href="/projects.php" class="navbar-item <?php if(isset($projects)){echo $projects;} ?>"> 
 	    					<span class="icon">
 	  							<i class="fa fa-rocket"></i>
@@ -70,8 +80,8 @@
 						</a>
 	    			</div>	
 	    			<div class="navbar-end">
-	    				<div class="navbar-item">
-	    					<a href="/contact.php" class="button is-primary is-outlined">
+	    				<div class="navbar-item <?php if(isset($contact)){echo $contact;} ?>">
+	    					<a href="/contact.php" class="button is-primary is-outlined" <?php if(isset($contact_disabled)){echo $contact_disabled;} ?>>
 	    						<span class="icon">
 	  								<i class="fa fa-envelope-o"></i>
 								</span>
@@ -86,35 +96,35 @@
 		</navbar>
 		<aside class="menu nav-mobile" id="nav-mobile">
 			<ul class="menu-list">
-				<li><a href="/home.php">
+				<li><a href="/home.php" class="<?php if(isset($home)){echo $home;} ?>">
 						<span class="icon">
 	  						<i class="fa fa-home"></i>
 						</span>
 						Home
 					</a>
 				</li>
-				<li><a href="/profile/education.php">
+				<li><a href="/profile/education.php" class="<?php if(isset($profile)){echo $profile;} ?>">
 						<span class="icon">
 	  						<i class="fa fa-vcard-o"></i>
 						</span>
 						Profile
 					</a>
 				</li>
-				<li><a href="/projects.php">
+				<li><a href="/projects.php" class="<?php if(isset($projects)){echo $projects;} ?>">
 						<span class="icon">
 	  						<i class="fa fa-rocket"></i>
 						</span>
 						Projects
 					</a>
 				</li>
-				<li><a href="/tools.php">
+				<li><a href="/tools.php" class="<?php if(isset($tools)){echo $tools;} ?>">
 						<span class="icon">
 	  						<i class="fa fa-wrench"></i>
 						</span>
 						Tools
 					</a>
 				</li>
-				<li><a href="/contact.php">
+				<li><a href="/contact.php" class="<?php if(isset($contact)){echo $contact;} ?>">
 						<span class="icon">
 	  						<i class="fa fa-envelope-o"></i>
 						</span>

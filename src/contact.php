@@ -1,4 +1,6 @@
 <?php
+	$contact = "is-active";
+	$contact_disabled = "disabled";
 	$path = $_SERVER['DOCUMENT_ROOT'];
 	$path .= "/templates/_header.php";
 	include_once($path)
