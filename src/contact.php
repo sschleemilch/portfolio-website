@@ -1,10 +1,8 @@
 <?php
-	$profile = "is-active";
 	$path = $_SERVER['DOCUMENT_ROOT'];
 	$path .= "/_header.php";
 	include_once($path)
 ?>
-
 <section class="section">
 	<div class="container">
 	<div class="notification is-warning">

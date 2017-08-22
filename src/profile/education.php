@@ -13,6 +13,7 @@
 <section class="section">
 	<div class="container">
 		<h1 class="title"><strong>School</strong> education</h1>
+		<h2 class="subtitle">Yes, I also had to</h2>
 		<hr>
 		<div class="content">
 			<p> My education: </p>

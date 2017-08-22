@@ -17,18 +17,19 @@
 	  <link rel="icon" type="image/png" href="/img/favicon.png">
 
 	  <!-- Scripts -->
+	  <script type="text/javascript" charset="utf-8" src="/jsm/nav-mobile.min.js"></script>
 	</head>
 
 	<!-- Body -->
 	<body>
-		<navbar class="navbar">
+		<navbar class="navbar" name="top">
 			<div class="container">
 				<div class="navbar-brand">
-					<a name="top" class="navbar-item" href="/index.php">
+					<a class="navbar-item" href="/index.php">
 						<img src="/img/logo_schleemilch_small_milk.png" alt="Schleemilch:Sebastian" width="70" height="28">
 					</a>
 				</div>
-				<div class="navbar-burger">
+				<div class="navbar-burger" onclick="openMobileNav()">
 	      			<span></span>
 	      			<span></span>
 	      			<span></span>
@@ -70,7 +71,7 @@
 	    			</div>	
 	    			<div class="navbar-end">
 	    				<div class="navbar-item">
-	    					<a class="button is-primary is-outlined">
+	    					<a href="/contact.php" class="button is-primary is-outlined">
 	    						<span class="icon">
 	  								<i class="fa fa-envelope-o"></i>
 								</span>
@@ -83,3 +84,48 @@
 	    		</div>
     		</div>
 		</navbar>
+		<aside class="menu nav-mobile" id="nav-mobile">
+			<ul class="menu-list">
+				<li><a href="/home.php">
+						<span class="icon">
+	  						<i class="fa fa-home"></i>
+						</span>
+						<strong>Home</strong>
+					</a>
+				</li>
+				<li><a href="/profile/education.php">
+						<span class="icon">
+	  						<i class="fa fa-vcard-o"></i>
+						</span>
+						<strong>Profile</strong>
+					</a>
+				</li>
+				<li><a href="/projects.php">
+						<span class="icon">
+	  						<i class="fa fa-rocket"></i>
+						</span>
+						<strong>Projects</strong>
+					</a>
+				</li>
+				<li><a href="/tools.php">
+						<span class="icon">
+	  						<i class="fa fa-wrench"></i>
+						</span>
+						<strong>Tools</strong>
+					</a>
+				</li>
+				<li><a href="/contact.php">
+						<span class="icon">
+	  						<i class="fa fa-envelope-o"></i>
+						</span>
+						<strong>Contact</strong>
+					</a>
+				</li>
+				<li><a href="javascript:void(0)" onclick="closeMobileNav()">
+						<span class="icon">
+	  						<i class="fa fa-times" style="color: #FF3860"></i>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</aside>

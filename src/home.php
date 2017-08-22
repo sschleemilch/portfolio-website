@@ -44,7 +44,6 @@
 		</section>
 
 <?php
-	$profile = "is-active";
 	$path = $_SERVER['DOCUMENT_ROOT'];
 	$path .= "/_footer.php";
 	include_once($path)

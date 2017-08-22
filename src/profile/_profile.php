@@ -1,4 +1,4 @@
-<section class="hero is-info">
+<section class="hero is-info is-medium">
 	<div class="hero-body">
 		<div class="container has-text-centered">
 			<span class="icon is-huge"><i class="fa fa-user-circle-o"></i></span>
@@ -10,7 +10,7 @@
 			<nav class="tabs is-boxed">
 				<ul>
 					<li class="<?php if(isset($profile_education)){echo $profile_education;} ?>">
-						<a href="education.php">Education</a>
+						<a href="education.php"></span>Education</a>
 					</li>
 					<li class="<?php if(isset($profile_work)){echo $profile_work;} ?>">
 						<a href="work.php">Work</a>
