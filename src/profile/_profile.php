@@ -14,6 +14,9 @@
 					</li>
 					<li class="<?php if(isset($profile_work)){echo $profile_work;} ?>">
 						<a href="work.php">Work</a>
+					</li>
+					<li class="<?php if(isset($profile_social)){echo $profile_social;} ?>">
+						<a href="social.php">Social</a>
 					</li>	
 				</ul>
 			</nav>

@@ -8,7 +8,7 @@
 <section class="hero is-primary">
 		<div class="hero-body">
 			<div class="container">
-				<h1 class="title is-1">Welcome <strong><?php echo $_SERVER['REMOTE_ADDR'] ?></strong></h1>
+				<h1 class="title">Welcome <strong><?php echo $_SERVER['REMOTE_ADDR'] ?></strong></h1>
 				<h2 class="subtitle">I know, your name would be more suitable. Still I hope that you will stay for some time <i class="fa fa-smile-o"></i></h2>
 				<br>
 				<div class="has-text-centered">

@@ -1,0 +1,37 @@
+div.label-box
+	border-radius: 3px
+	position: relative
+	border: 1px solid $grey-darker
+	padding: 1.5rem
+	&:before
+		bottom: 100%
+		display: inline-block
+		font-size: 7px
+		font-weight: bold
+		left: -1px
+		letter-spacing: 1px
+		padding: 3px 5px
+		position: absolute
+		text-transform: uppercase
+		vertical-align: top
+		content: "Test"
+		border-radius: 3px px 0 0
+	&:first-child
+		margin-top: 2rem
+	&:last-child
+		margin-bottom: 1.5rem
+	&.is-yellow
+		border: 1px solid $yellow
+		&:before
+			background: $yellow
+			color: $yellow-invert
+	&.is-blue
+		border: 1px solid $blue
+	&.is-green
+		border: 1px solid $green
+	&.is-turquise
+		border: 1px solid $turquoise
+	&.is-red
+		border: 1px solid $red
+	&.is-white
+		border: 1px solid $white-ter
