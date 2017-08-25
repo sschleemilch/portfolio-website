@@ -1,3 +1,4 @@
+		<hr class="is-marginless">
 		<footer class="footer">
 			<div class="container">
 				<div class="columns has-text-centered">

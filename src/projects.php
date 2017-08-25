@@ -5,11 +5,9 @@
 	include_once($path)
 ?>
 <section class="section">
-	<div class="container">
-	<div class="notification is-warning">
-	  <button class="delete"></button>
-	  <strong>Warning</strong>: This site is still under construction. Come back later
-	</div>
+	<div class="container has-text-centered">
+		<span class="icon is-huge"><i class="fa fa-cogs"></i></span>
+		<h1 class="title">Under Construction</h1>
 	</div>
 </section>
 
