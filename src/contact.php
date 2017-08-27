@@ -21,6 +21,8 @@
 	$htmlSuccessSign = "<span class=\"icon is-small is-right\">";
 	$htmlSuccessSign = $htmlSuccessSign . "<i class=\"fa fa-check\"></i></span>";
 
+	$mailSuccess = "";
+
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		if (empty($_POST["name"]) && strlen($name) == 0){
 			$nameHasErr = true;
@@ -35,7 +37,7 @@
 			} else {
 				$nameIsSet = true;
 				$nameIsState = "is-success";
-				$nameSuccess = return_sucess_p("Your given name format is ok.");
+				$nameSuccess = return_sucess_p("Your given name format was ok.");
 			}
 		}
 		if (empty($_POST["email"]) && strlen($email) == 0){
@@ -51,7 +53,7 @@
 			} else {
 				$emailIsSet = true;
 				$emailIsState = "is-success";
-				$emailSuccess = return_sucess_p("Your given email format is ok.");
+				$emailSuccess = return_sucess_p("Your given email format was ok.");
 			}
 		}
 		if (empty($_POST["message"]) && strlen($message) == 0){
@@ -62,8 +64,21 @@
 			$message = test_input($_POST["message"]);
 			$messageIsSet = true;
 			$messageIsState = "is-success";
-			$messageSuccess = return_sucess_p("Your given message format is ok.");
+			$messageSuccess = return_sucess_p("Your given message format was ok.");
 		}
+
+		if (!$nameHasErr && !$emailHasErr && !$messageHasErr &&
+			$nameIsSet && $emailIsSet && $messageIsSet){
+			send_mail($email, $message, $name);
+			$mailSuccess = return_success_message();
+		}
+	}
+
+	function send_mail($from, $msg, $nme){
+		$subject = "sebastian-schleemilch.de::Mail Contact";
+		$header = "From: " . $from . "\r\n" . "Reply-To: " . $from . "\r\n" . "X-Mailer: PHP/" . phpversion();
+		$msg = "From-Name: " . $nme . "\n" . $msg;
+		mail("basti.schleemilch@onlinehome.de", $subject, $msg, $header);
 	}
 
 	function test_input($data) {
@@ -71,6 +86,21 @@
 	  $data = stripslashes($data);
 	  $data = htmlspecialchars($data);
 	  return $data;
+	}
+
+	function return_success_message(){
+		return "<div class=\"columns is-centered\">
+				<div class=\"column is-8\">
+					<article class=\"message is-success\">
+					  <div class=\"message-header\">
+					    <p>Success</p>
+					  </div>
+					  <div class=\"message-body\">
+					   	Your mail <strong>was sent successfully</strong>. I will reply as soon as I can. <strong>Thank you</strong>!
+					  </div>
+					</article>
+				</div>
+			</div>";
 	}
 
 	function return_error_p($msg){
@@ -106,7 +136,7 @@
 <section class="hero is-dark is-medium">
 	<div class="hero-body">
 		<div class="container has-text-centered">
-			<h1 class="title"><span class="icon is-large"><i class="fa fa-comments-o"></i></span><br>Media Channels</h1>
+			<h1 class="title"><span class="icon is-large"><i class="fa fa-comments-o"></i></span><br>Social Media Channels</h1>
 			<br>
 			<div class="columns">
 				<div class="column is-one-third">
@@ -220,6 +250,9 @@
 					</form>
 				</div>
 			</div>
+			<?php
+				echo $mailSuccess; 
+			?>
 		</div>
 	</div>
 </section>
