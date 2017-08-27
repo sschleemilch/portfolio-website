@@ -45,7 +45,7 @@
 	    					</span> 
 						</a>
 						<div class="navbar-item has-dropdown is-hoverable">
-	    					<a class=navbar-link <?php if(isset($profile)){echo $profile;}?>>
+	    					<a class="navbar-link <?php if(isset($profile)){echo $profile;}?>">
 		    					<span class="icon">
 		  							<i class="fa fa-vcard-o"></i>
 								</span>
@@ -65,14 +65,21 @@
 	    						</a>
 	    					</div>
 						</div>
-						<a href="/projects.php" class="navbar-item <?php if(isset($projects)){echo $projects;} ?>"> 
-	    					<span class="icon">
-	  							<i class="fa fa-rocket"></i>
-							</span>
-							<span>
-	    						&nbsp;Projects
-	    					</span> 
-						</a>
+						<div class="navbar-item has-dropdown is-hoverable">
+							<a class="navbar-link <?php if(isset($projects)){echo $projects;} ?>"> 
+		    					<span class="icon">
+		  							<i class="fa fa-rocket"></i>
+								</span>
+								<span>
+		    						&nbsp;Projects
+		    					</span> 
+							</a>
+							<div class="navbar-dropdown">
+								<a href="/projects/website/introduction.php" class="navbar-item <?php if(isset($projects_website)){echo $projects_website;}?>">
+	    							Website
+	    						</a>
+							</div>
+						</div>
 						<a href="/tools.php" class="navbar-item <?php if(isset($tools)){echo $tools;} ?>"> 
 	    					<span class="icon">
 	  							<i class="fa fa-wrench"></i>
@@ -113,7 +120,7 @@
 						Profile
 					</a>
 				</li>
-				<li><a href="/projects.php" class="<?php if(isset($projects)){echo $projects;} ?>">
+				<li><a href="/projects/website/introduction.php" class="<?php if(isset($projects)){echo $projects;} ?>">
 						<span class="icon">
 	  						<i class="fa fa-rocket"></i>
 						</span>

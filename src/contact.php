@@ -169,8 +169,7 @@
 		<div class="content">
 			<div class="columns is-centered">
 				<div class="column is-8">
-					<h1 class="title has-text-centered" name="mail_form"> <strong>Mail</strong> Form </h1>
-					<hr>
+					<h1 class="title has-text-centered" name="mail_form"><span class="icon is-large"><i class="fa fa-envelope-o"></i></span> <strong>Mail</strong> Form </h1>
 				</div>
 			</div>
 			<div class="columns is-centered">
