@@ -10,7 +10,7 @@
 <section class="hero">
 	<div class="hero-body">
 		<div class="container">
-			<h1 class="title"><span class="icon is-large"><i class="fa fa-briefcase"></i></span><strong> Work</strong> experience</h1>
+			<h1 class="title has-text-centered"><span class="icon is-large"><i class="fa fa-briefcase"></i></span><strong> Work</strong> experience</h1>
 			<div class="box">
 				<div class="columns">
 					<div class="column is-2">
@@ -31,7 +31,7 @@
 <section class="hero">
 	<div class="hero-body">
 		<div class="container">
-			<h1 class="title"><span class="icon is-large"><i class="fa fa-university"></i></span><strong> Work</strong> experience while <strong>studying</strong></h1>
+			<h1 class="title has-text-centered"><span class="icon is-large"><i class="fa fa-university"></i></span><strong> Work</strong> experience while <strong>studying</strong></h1>
 			<div class="box">	
 				<div class="columns">
 					<div class="column is-2">

@@ -5,6 +5,88 @@
 	$path .= "/templates/_header.php";
 	include_once($path)
 ?>
+
+<?php
+	// define variables and set to empty values
+	$name = $email = $message = "";
+	$nameErr = $emailErr = $messageErr = "";
+	$nameSuccess = $emailSuccess = $messageSuccess = "";
+	$nameHasErr = $emailHasErr = $messageHasErr = false;
+	$nameIsState = $emailIsState = $messageIsState = "";
+	$nameIsSet = $emailIsSet = $messageIsSet = false;
+
+	$htmlDangerSign = "<span class=\"icon is-small is-right\">";
+	$htmlDangerSign = $htmlDangerSign . "<i class=\"fa fa-warning\"></i></span>";
+
+	$htmlSuccessSign = "<span class=\"icon is-small is-right\">";
+	$htmlSuccessSign = $htmlSuccessSign . "<i class=\"fa fa-check\"></i></span>";
+
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		if (empty($_POST["name"]) && strlen($name) == 0){
+			$nameHasErr = true;
+			$nameErr = return_error_p("Please give your name");
+			$nameIsState = "is-danger";
+		} else {
+			$name = test_input($_POST["name"]);
+			if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+				$nameErr = return_error_p("Only letters and white space allowed.");
+				$nameHasErr = true;
+				$nameIsState = "is-danger";
+			} else {
+				$nameIsSet = true;
+				$nameIsState = "is-success";
+				$nameSuccess = return_sucess_p("Your given name format is ok.");
+			}
+		}
+		if (empty($_POST["email"]) && strlen($email) == 0){
+			$emailHasErr = true;
+			$emailErr = return_error_p("Please type in your email.");
+			$emailIsState = "is-danger";
+		} else {
+			$email = test_input($_POST["email"]);
+			if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+				$emailErr = return_error_p("Invalid email format.");
+				$emailHasErr = true;
+				$emailIsState = "is-danger";
+			} else {
+				$emailIsSet = true;
+				$emailIsState = "is-success";
+				$emailSuccess = return_sucess_p("Your given email format is ok.");
+			}
+		}
+		if (empty($_POST["message"]) && strlen($message) == 0){
+			$messageHasErr = true;
+			$messageErr = return_error_p("Please type in a message");
+			$messageIsState = "is-danger";
+		} else {
+			$message = test_input($_POST["message"]);
+			$messageIsSet = true;
+			$messageIsState = "is-success";
+			$messageSuccess = return_sucess_p("Your given message format is ok.");
+		}
+	}
+
+	function test_input($data) {
+	  $data = trim($data);
+	  $data = stripslashes($data);
+	  $data = htmlspecialchars($data);
+	  return $data;
+	}
+
+	function return_error_p($msg){
+		$p = "<p class=\"help is-danger\">";
+		$p = $p . $msg;
+		$p = $p . "</p>";
+		return $p;
+	}
+	function return_sucess_p($msg){
+		$p = "<p class=\"help is-success\">";
+		$p = $p . $msg;
+		$p = $p . "</p>";
+		return $p;
+	}
+?>
+
 <section class="hero is-primary is-medium">
 	<div class="hero-body">
 		<div class="container has-text-centered">
@@ -54,42 +136,86 @@
 </section>
 <section class="section">
 	<div class="container">	
-		<div class="content">	
-			<h1 class="title"> Mail Form </h1>
+		<div class="content">
+			<div class="columns is-centered">
+				<div class="column is-8">
+					<h1 class="title has-text-centered" name="mail_form"> <strong>Mail</strong> Form </h1>
+					<hr>
+				</div>
+			</div>
 			<div class="columns is-centered">
 				<div class="column is-half">
-					<form method="post", action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+					<form method="post", action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) . "#mail_form";?>" id="mail_form">
 						<div class="field">
 							<label class="label">Name</label>
-							<div class="control has-icons-left">
-								<input class="input" type="text" placeholder="Your Name">
+							<div class="control has-icons-left has-icons-right">
+								<input class="input <?php echo $nameIsState?>" type="text" name="name" placeholder="Your Name" value="<?php echo $name?>">
 								<span class="icon is-small is-left">
 						      		<i class="fa fa-user"></i>
 						    	</span>
+						    	<?php 
+						    		if($nameHasErr){
+						    			echo $htmlDangerSign;
+						    		} elseif($nameIsSet){
+						    			echo $htmlSuccessSign;
+						    		}
+						    	?>
 							</div>
+							<?php
+								if($nameHasErr){
+									echo $nameErr;
+								}elseif($nameIsSet){
+									echo $nameSuccess;
+								}
+							?>
 						</div>
 						<div class="field">
 							<label class="label">Email</label>
 						  	<div class="control has-icons-left has-icons-right">
-						    	<input class="input" type="text" placeholder="Your Email Address">
+						    	<input class="input <?php echo $emailIsState?>" type="text" name="email" placeholder="Your Email Address" value="<?php echo $email?>">
 						    	<span class="icon is-small is-left">
 						      		<i class="fa fa-envelope"></i>
 						    	</span>
+						    	<?php 
+						    		if($emailHasErr){
+						    			echo $htmlDangerSign;
+						    		} elseif($emailIsSet){
+						    			echo $htmlSuccessSign;
+						    		}
+						    	?>
 						  	</div>
+						  	<?php
+								if($emailHasErr){
+									echo $emailErr;
+								}elseif($emailIsSet){
+									echo $emailSuccess;
+								}
+							?>
 						</div>
 						<div class="field">
 							<label class="label">Message</label>
-							<div class="control">
-								<textarea class="textarea" placeholder="Your Message..."></textarea>
+							<div class="control has-icons-right">
+								<textarea class="textarea <?php echo $messageIsState?>" name="message" placeholder="Your Message..."><?php echo $message?></textarea>
+								<?php 
+						    		if($messageHasErr){
+						    			echo $htmlDangerSign;
+						    		} elseif($messageIsSet){
+						    			echo $htmlSuccessSign;
+						    		}
+						    	?>
 							</div>
+							<?php
+								if($messageHasErr){
+									echo $messageErr;
+								}elseif($messageIsSet){
+									echo $messageSuccess;
+								}
+							?>
 						</div>
 						<div class="field is-grouped">
 							<div class="control">
-								<button class="button is-primary">Send</button>
+								<button class="button is-primary" type="submit" value="Send" form="mail_form">Send</button>
 							</div>
-						  	<div class="control">
-						    	<button class="button is-link">Clear fields</button>
-						  	</div>
 						</div>
 					</form>
 				</div>

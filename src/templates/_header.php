@@ -136,7 +136,7 @@
 				</li>
 				<li><a href="javascript:void(0)" onclick="closeMobileNav()">
 						<span class="icon">
-	  						<i class="fa fa-times" style="color: #FF3860"></i>
+	  						<i class="fa fa-angle-up" style="color: #FF3860"></i>
 						</span>
 					</a>
 				</li>

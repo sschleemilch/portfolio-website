@@ -6,7 +6,7 @@
 						<div class="content">
 							<a href="#top">
 							<span class="icon is-small">
-	  							<i class="fa fa-arrow-up"></i>
+	  							<i class="fa fa-angle-up"></i>
 							</span>
 							Back to top
 							</a>
