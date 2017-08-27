@@ -1,4 +1,4 @@
-<section class="hero is-info">
+<section class="hero is-info is-medium">
 	<div class="hero-body">
 		<div class="container has-text-centered">
 			<img src="/img/profile.png" alt="Schleemilch_Sebastian_Picture" width="200" height="200">
@@ -15,8 +15,8 @@
 					<li class="<?php if(isset($profile_work)){echo $profile_work;} ?>">
 						<a href="work.php">Work</a>
 					</li>
-					<li class="<?php if(isset($profile_social)){echo $profile_social;} ?>">
-						<a href="social.php">Social</a>
+					<li class="<?php if(isset($profile_hobbies)){echo $profile_hobbies;} ?>">
+						<a href="hobbies.php">Hobbies</a>
 					</li>	
 				</ul>
 			</nav>

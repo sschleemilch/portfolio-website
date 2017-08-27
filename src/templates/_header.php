@@ -60,8 +60,8 @@
 	    						<a href="/profile/work.php" class="navbar-item <?php if(isset($profile_work)){echo $profile_work;}?>">
 	    							Work
 	    						</a>
-	    						<a href="/profile/social.php" class="navbar-item <?php if(isset($profile_social)){echo $profile_social;}?>">
-	    							Social
+	    						<a href="/profile/hobbies.php" class="navbar-item <?php if(isset($profile_hobbies)){echo $profile_hobbies;}?>">
+	    							Hobbies
 	    						</a>
 	    					</div>
 						</div>

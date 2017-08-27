@@ -20,7 +20,9 @@
 		<section class="hero is-dark">
 			<div class="hero-body">
 				<div class="container has-text-centered">
-					<h1 class="title"><strong>What </strong> is this page <strong> about</strong>?</h1>
+					<h1 class="title"><span class="icon is-large"><i class="fa fa-question-circle-o"></i></span>
+						<br><strong>What </strong> is this page <strong> about</strong>?
+					</h1>
 					<br>
 					<div class="columns">
 						<a class="column" href="/profile/education.php">
