@@ -23,19 +23,8 @@
 				That said, the webiste project's goal was more or less the path itself rather than the finished product.<br><br>
 				In the next sections, you will find information about my development setup, the technologies I decided to use and why I did chose them for me.
 				Also, you will find some insights about the folder structuring of this site including a little bit of backend programming. Have fun!
+				I suggest reading the very next section <a href="/projects/website/technologies.php">technologies</a> but of course you can jump in anywhere you want.
 			</p>
-		</div>
-		<div class="columns">
-			<div class="column is-1 is-offset-11">
-				<div class="column is-1 is-offset-11">
-				<a href="/projects/website/technologies.php" class="button is-outlined">
-					<span>Next</span>
-					<span class="icon is-small">
-						<i class="fa fa-chevron-right"></i>
-					</span>
-				</a>
-			</div>
-			</div>
 		</div>
 	</div>
 </div>

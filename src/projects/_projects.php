@@ -17,9 +17,11 @@
 		</div>
 	</div>
 </section>
-<div class="container is-fullhd">
-	<div class="navbar-brand">
-		<a href="/projects/website/introduction.php" class="navbar-item is-tab <?php if(isset($projects_website_introduction)){echo $projects_website_introduction;}?>">Introduction</a>
-		<a href="/projects/website/technologies.php" class="navbar-item is-tab <?php if(isset($projects_website_technologies)){echo $projects_website_technologies;}?>">Technologies</a>
+<div class="navbar has-shadow">
+	<div class="container">
+		<div class="navbar-brand">
+			<a href="/projects/website/introduction.php" class="navbar-item is-tab <?php if(isset($projects_website_introduction)){echo $projects_website_introduction;}?>">Introduction</a>
+			<a href="/projects/website/technologies.php" class="navbar-item is-tab <?php if(isset($projects_website_technologies)){echo $projects_website_technologies;}?>">Technologies</a>
+		</div>
 	</div>
 </div>
