@@ -159,7 +159,68 @@
 </div>
 <div class="hero">
 	<div class="hero-body">
-		<h1 class="title has-text-centered">Backend technologies</h1>
+		<div class="container">
+			<h1 class="title has-text-centered">Backend technologies</h1>
+			<div class="content">
+				<p>
+					Backend is the server sided logic what pages to deliver and to compute content of those pages.
+					Again, here you have the choice of I would say four main technologies that are being used these days:
+				</p>
+				<div class="columns has-text-centered">
+					<div class="column">
+						<a href="https://nodejs.org/en/">
+							<img src="/img/icon_is_large_nodejs.png" alt="Icon::NodeJS" width="37" height="42">
+						</a>
+						<p class="title is-4"> <strong> NodeJS </strong> </p>
+						<p class="subtitle"> Use your JavaScript knowledge </p>
+					</div>
+					<div class="column">
+						<a href="http://php.net/manual/de/intro-whatis.php">
+							<img src="/img/icon_is_large_php.png" alt="Icon::PHP" width="42" height="42">
+						</a>
+						<p class="title is-4"> <strong> PHP </strong> </p>
+						<p class="subtitle"> The oldest, but still great </p>
+					</div>
+					<div class="column">
+						<a href="https://www.djangoproject.com/foundation/">
+							<img src="/img/icon_is_large_django.png" alt="Icon::Django" width="42" height="42">
+						</a>
+						<p class="title is-4"> <strong> Django </strong> </p>
+						<p class="subtitle"> Based on Pythong </p>
+					</div>
+					<div class="column">
+						<a href="https://www.ruby-lang.org/de/">
+							<img src="/img/icon_is_large_ruby.png" alt="Icon::Ruby" width="42" height="42">
+						</a>
+						<p class="title is-4"> <strong> Ruby </strong> </p>
+						<p class="subtitle"> Good choice if already familiar with </p>
+					</div>
+				</div>
+				<p>
+					For me, the decision was about simplicity. Since I do not have and need computing intensive
+					multithreading tasks, performance also did not matter for me. But there are differences of course.
+					I guess this decision is a lot about personal preferences. NodeJS has definetely the upside that you
+					won't learn a new language when being already familiar with JavaScript. Same thing should be the case 
+					when choosing Django which is based on the Python programming language. Although I am quite familiar
+					with JavaScript and Python, I still chose PHP.<br><br>
+					<strong>Design Decision:</strong> Backend technology:
+				</p>
+				<div class="columns has-text-centered is-centered">
+					<div class="column">
+						<a href="http://php.net/manual/de/intro-whatis.php">
+							<img src="/img/icon_is_large_php.png" alt="Icon::PHP" width="42" height="42">
+						</a>
+						<p class="title is-4"> <strong> PHP </strong> </p>
+						<p class="subtitle"> Simple, pure, good HTML integration</p>
+					</div>
+				</div>
+				<p>
+					So far so good. The base technologies are decided.<br>
+					In the next <strong><a href="/projects/website/environment.php">chapter</a></strong>, I will talk about setting up the development environment.
+					That includes setting up the backend-server and my local development suite.
+				</p>
+			</div>
+		</div>
 	</div>
 </div>
 
