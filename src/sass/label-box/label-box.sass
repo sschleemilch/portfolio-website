@@ -5,6 +5,17 @@ div.lb
 	padding: 1.5rem
 	margin-top: 2rem
 	margin-bottom: 1rem
+	&.is-blue
+		border: 1px solid $blue
+		&:before
+			color: $blue-invert
+			background: $blue
+	&.is-step
+		&:before
+			content: "Step"
+	&.is-fun
+		&:before
+			content: "Fun"
 	&:before
 		bottom: 100%
 		display: inline-block

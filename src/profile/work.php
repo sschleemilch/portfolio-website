@@ -11,7 +11,7 @@
 	<div class="hero-body">
 		<div class="container">
 			<h1 class="title"><span class="icon is-large"><i class="fa fa-briefcase"></i></span><strong> Work</strong> experience</h1>
-			<div class="box">
+			<div class="lb is-blue is-step">
 				<div class="columns">
 					<div class="column is-2">
 						<h1 class="title is-4">06/2016-present:</h1>
@@ -32,7 +32,7 @@
 	<div class="hero-body">
 		<div class="container">
 			<h1 class="title"><span class="icon is-large"><i class="fa fa-university"></i></span><strong> Work</strong> experience while <strong>studying</strong></h1>
-			<div class="box">	
+			<div class="lb is-blue is-step">	
 				<div class="columns">
 					<div class="column is-2">
 						<h1 class="title is-4">10/2014-07/2015:</h1>
@@ -47,7 +47,7 @@
 				</div>
 			</div>
 
-			<div class="box">
+			<div class="lb is-blue is-step">
 				<div class="columns">
 					<div class="column is-2">
 						<h1 class="title is-4">11/2013-09/2014:</h1>
@@ -61,7 +61,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="box">
+			<div class="lb is-blue is-step">
 				<div class="columns">
 					<div class="column is-2">
 						<h1 class="title is-4">05/2013-09/2013:</h1>
@@ -75,7 +75,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="box">
+			<div class="lb is-blue is-step">
 				<div class="columns">
 					<div class="column is-2">
 						<h1 class="title is-4">10/2012-04/2013:</h1>
@@ -89,7 +89,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="box">
+			<div class="lb is-blue is-step">
 				<div class="columns">
 					<div class="column is-2">
 						<h1 class="title is-4">10/2011-10/2012:</h1>

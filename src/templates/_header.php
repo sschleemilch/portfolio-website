@@ -6,7 +6,10 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	  <title>Sebastian Schleemilch</title>
-
+	  <meta name="description" content="Sebastian Schleemilch - Portfolio, Projects, Tutorials">
+	  <meta name="keywords" content="Schleemilch, Sebastian Schleemilch, Bulma, CSS, HTML, Portfolio, Projects">
+	  <meta name="author" content="Sebastian Schleemilch">
+	  <meta name="date" content="2017-08-30T10:00:00+02:00">
 	  <!-- Main Style Sheet -->
 	  <link rel="stylesheet" type="text/css" href="/css/style.min.css">
 	  

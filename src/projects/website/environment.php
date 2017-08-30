@@ -198,11 +198,72 @@ $ <span class="gr">sudo</span> <span class="bl">certbot</span> --apache
                     <li><strong>js/</strong>, JavaScript sources</li>
                     <li><strong>jsm/</strong>, minified JavaScript files</li>
                     <li><strong>sass/</strong>, SASS stylesheet sources </li>
-                    <li><strong>&lt;main-sites&gt;.php</strong>, main sites from website root</li>
-                    <li><strong>&lt;sites-with-subsites&gt;/</strong>, pages that do have subsites</li>
+                    <li><code>index.php</code>, website entry point &lt;root&gt;/</li>
+                    <li><strong>&lt;pages_with_subpages&gt;/</strong>, pages that do have subsites (like <code>/profile/education</code>)</li>
                 </ul>
                 <p>
-
+                    Yout might have noticed that <strong>css/</strong> only contains generated CSS code. Since you can only include a <code>.css</code> file
+                    rather than directly <code>.sass</code> there has to be a step in between. So first thing to do is to install Sass in order to be able
+                    to "compile" the Sass code into normal CSS to actually use it. Installation is described on the official
+                    <strong><a href="http://sass-lang.com/install">Sass</a></strong> site. You do need Ruby and its package manager "gem" to install Sass.
+                    The ruby windows installer can be found <strong><a href="https://rubyinstaller.org/">here</a></strong>.
+                    After doing so, you can install Sass through it:
+                </p>
+                <div class="lb is-code">
+<pre>
+<code>
+<span class="gr">gem</span> <span class="bl">install</span> <span class="com">sass</span>
+</code>
+</pre>             
+                </div>
+                <p>
+                    Afterwards, Sass will be available on your command line by typing <code>sass</code>. To compile a Sass file the command line
+                    call does look like this: <code>sass input.sass output.css</code>. Sass does support watching files so that it will compile
+                    the input file as soon as it changes (e.g. hitting <code>ctrl-f</code> in your editor):
+                    <code>sass --watch sass:css</code>. The command will watch your "sass" folder and will compile any Sass file immediately
+                    into the equally named CSS counterpart in the directory "css".<br><br>
+                    Although internet bandwith these days might not be that critical anymore (at least for non-mobile devices), you should 
+                    still think about reducing size of your files wherever possible. That is why there do exist tools to minify code files
+                    automatically by removing any whitespaces or even optimizing the code itself. This can be applied for CSS, JavaScript
+                    and even HTML files. I am minifying only CSS and JavaScript files. Therefore, the "css" folder will in the end only
+                    contain a single minified CSS file <code>style.min.css</code> and the "jsm" folder only <code>&lt;script-name&gt;.min.js</code> files.
+                    <br>
+                    That means, that in our HTML or PHP file respectively, we will only include those minified files for example like this:
+                </p>
+                 <div class="lb is-code">
+<pre>
+<code>
+&lt;<span class="gr">link</span> <span class="bl">rel=</span><span class="com">"stylesheet"</span> <span class="bl">type=</span><span class="com">"text/css"</span> <span class="bl">href=</span><span class="com">"/css/style.min.css"</span>&gt;
+</code>
+</pre>            
+                </div>
+                <p>
+                    So we do need additional steps after the Sass compiling step to minify our files. Also, there might be even more small
+                    tasks we do want to execute automatically every time something is changing. Therefore, it is a good idea to think about
+                    kind of a task runner build system. Of course there are a few out there that are specialized for that use case like
+                    <strong><a href="https://gruntjs.com/">Grunt</a></strong> and <strong><a href="https://gulpjs.com/">Gulp</a></strong>.
+                    They are both based on JavaScript. The installation leads to another point. You will need the JavaScript package manager
+                    <strong><a href="https://www.npmjs.com/">npm</a></strong>. It is great for tracking your plugins and has a huge database
+                    of JavaScript tools. I ended up using Grunt even though I also used Gulp in the past.<br><br>
+                    npm can be installed through their website. Afterwards you will be able to execute the <code>npm</code> on your command line.
+                    Now we can finally install our task runner of choice: Grunt
+                </p>
+                <div class="lb is-code">
+<pre>
+<code>
+<span class="gr">npm</span> <span class="bl">install</span> <span class="or">-g</span> <span class="com">grunt-cli</span>
+</code>
+</pre>             
+                </div>
+                <p>
+                    The <code>-g</code> flag means a global system install so that you are able to use grunt on your machine
+                    project independently as a command line tool calling <code>grunt</code>.
+                    There does exist the option since npm can handle your project dependencies locally. You can add project
+                    specific dependencies without the global flag which will create a <code>node_modules/</code> directory
+                    holding those packages. People that do want to contribute can then clone your sandbox, call
+                    <code> npm install </code> in the project directory and will end up having the environment for getting started.<br>
+                    Anyway, to define what grunt can do, you need to create a <code>Gruntfile.js</code> that specifies your tasks and
+                    what they should do.
                 </p>
             </div>
         </div>
