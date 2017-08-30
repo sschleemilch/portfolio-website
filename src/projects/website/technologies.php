@@ -10,7 +10,7 @@
 ?>
 
 <div class="section">
-	<div class="container is-fullhd">
+	<div class="container">
 		<h1 class="title"><strong>(Web)-Technologies</strong></h1>
 		<h2 class="subtitle">What technologies I did choose and why</h2>
 		<div class="content">
@@ -29,7 +29,7 @@
 <div class="hero is-dark">
 	<div class="hero-body">
 		<div class="container">
-			<h1 class="title has-text-centered">Frontend technologies</h1>
+			<h1 class="title">Frontend technologies</h1>
 			<div class="content">
 				<p>
 					For frontend development, meaning that what your clients will see and feel, you don't
@@ -65,7 +65,6 @@
 					For myself, I chose to use JavaScript as a minimum for the webiste look and feel itself, but I did not want to exclude it completely.
 				</p>
 			</div>
-			<hr>
 			<h1 class="title is-4"><strong>CSS Frameworks</strong></h1>
 			<div class="content">
 				<p>
@@ -118,7 +117,6 @@
 					</div>
 				</div>
 			</div>
-			<hr>
 			<h1 class="title is-4"><strong>JavaScript Frameworks</strong></h1>
 			<div class="content">
 				<p>
@@ -139,7 +137,7 @@
 				</p>
 				<div class="columns has-text-centered">
 					<div class="column ">
-						<a href="http://bulma.io/">
+						<a href="https://www.javascript.com/">
 							<img src="/img/icon_is_large_javascript.png" alt="Icon::Javascript" width="37" height="42">
 						</a>
 						<p class="title is-4"> <strong> JavaScript </strong> </p>
@@ -160,7 +158,7 @@
 <div class="hero">
 	<div class="hero-body">
 		<div class="container">
-			<h1 class="title has-text-centered">Backend technologies</h1>
+			<h1 class="title">Backend technologies</h1>
 			<div class="content">
 				<p>
 					Backend is the server sided logic what pages to deliver and to compute content of those pages.
@@ -216,7 +214,7 @@
 				</div>
 				<p>
 					So far so good. The base technologies are decided.<br>
-					In the next <strong><a href="/projects/website/environment.php">chapter</a></strong>, I will talk about setting up the development environment.
+					In the next <a href="/projects/website/environment.php">chapter</a>, I will talk about setting up the development environment.
 					That includes setting up the backend-server and my local development suite.
 				</p>
 			</div>

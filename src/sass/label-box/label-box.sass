@@ -1,8 +1,10 @@
-div.label-box
-	border-radius: 3px
+div.lb
+	border-radius: 0px 3px 3px 3px
 	position: relative
-	border: 1px solid $grey-darker
+	border: 1px solid $red
 	padding: 1.5rem
+	margin-top: 2rem
+	margin-bottom: 1rem
 	&:before
 		bottom: 100%
 		display: inline-block
@@ -14,24 +16,23 @@ div.label-box
 		position: absolute
 		text-transform: uppercase
 		vertical-align: top
-		content: "Test"
-		border-radius: 3px px 0 0
+		border-radius: 3px 3px 0 0
+		background: $red
+		color: $red-invert
+	&.is-code
+		&:before
+			content: "Code"
 	&:first-child
 		margin-top: 2rem
 	&:last-child
 		margin-bottom: 1.5rem
-	&.is-yellow
-		border: 1px solid $yellow
-		&:before
-			background: $yellow
-			color: $yellow-invert
-	&.is-blue
-		border: 1px solid $blue
-	&.is-green
-		border: 1px solid $green
-	&.is-turquise
-		border: 1px solid $turquoise
-	&.is-red
-		border: 1px solid $red
-	&.is-white
-		border: 1px solid $white-ter
+	code
+		color: inherit
+		background-color: inherit
+		margin: 0
+		padding: 0
+	pre
+		margin: 0
+		padding: 0
+		background-color: inherit
+		color: inherit

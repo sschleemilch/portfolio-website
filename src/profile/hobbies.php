@@ -9,9 +9,9 @@
 
 <section class="hero">
 	<div class="hero-body">
-		<div class="container has-text-centered">
+		<div class="container">
 			<h1 class="title"><span class="icon is-large"><i class="fa fa-users"></i></span><strong> Hobbies</strong></h1>
-			<div class="box">
+			<div class="box has-text-centered">
 				<div class="columns">
 					<div class="column is-one-third">
 						<span class="icon is-large" style="color: #FF3860"><i class="fa fa-heartbeat"></i></span>
