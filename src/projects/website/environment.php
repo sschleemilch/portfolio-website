@@ -261,10 +261,137 @@ $ <span class="gr">sudo</span> <span class="bl">certbot</span> --apache
                     There does exist the option since npm can handle your project dependencies locally. You can add project
                     specific dependencies without the global flag which will create a <code>node_modules/</code> directory
                     holding those packages. People that do want to contribute can then clone your sandbox, call
-                    <code> npm install </code> in the project directory and will end up having the environment for getting started.<br>
+                    <code> npm install </code> in the project directory and will end up having the environment for getting started.<br><br>
                     Anyway, to define what grunt can do, you need to create a <code>Gruntfile.js</code> that specifies your tasks and
-                    what they should do.
+                    what they should do. Additionally we need to add grunt to our project dependencies which will create a "node-modules"
+                    folder and a <code>package-lock.json</code> and <code>package.json</code> to track our packages and its versions.
+                    To add grunt as a local dependency
+                    type: <code>npm install --save-dev</code>. No we are ready to create our first task.
+                    Grunt offers libraries with predefined tasks that can make your life quite easy. For Sass for example there does
+                    exist a package <code>grunt-contrib-sass</code>. Installing this dependency is similar to grunt itself in your project:<br>
+                    <code>npm install grunt-contrib sass --save-dev</code>. You can search for those package what they can do in details.
+                    In the following code snippet I will show you how those task packages can be used with Sass as the main example:
                 </p>
+                <div class="lb is-code">
+<pre>
+<code>
+<span class="or">module.</span><span class="bl">exports</span> = <span class=".gr">function</span>(<span class="or">grunt</span>) {
+    grunt.<span class="bl">loadNpmTasks</span>(<span class="gr">'grunt-contrib-sass'</span>);
+    grunt.<span class="bl">initConfig</span>({ <span class="com">// all task definitions do belong here</span>
+        <span class="bl">sass</span>: {
+            <span class="bl">all</span>: {
+                <span class="bl">files</span>: {
+                    <span class="gr">'style.css'</span>:<span class="gr">'style.sass'</span>
+                }
+            }
+        }
+    });
+    grunt.<span class="bl">registerTask</span>(<span class="gr">'default'</span>,[<span class="gr">'sass'</span>]);
+};
+</code>
+</pre>             
+                </div>
+                <p>
+                    The code snippet will convert the <code>style.sass</code> in the same path as the <code>Gruntfile.js</code>
+                    into <code>style.css</code> by just typing <code>grunt</code> since we assigned the "sass" task to be the
+                    default one. By just specifying "sass", the task will execute all subtasks. In this case we only have one
+                    ("all"). You could specify subtasks by changing the "sass" in "registerTask" to "sass:all".<br>
+                    As you can see, you can assign an array of tasks to a main task. That is useful for connecting more than
+                    just Sass. This way, I did setup a few more tasks that should run automatically:
+                </p>
+                <ul>
+                    <li><code>grunt-contrib-jshint</code> to verify JavaScript files before runtime</li>
+                    <li><code>grunt-contrib-watch</code> watch files and restart assigned tasks </li>
+                    <li><code>grunt-contrib-uglify</code> minify JavaScript into minified JavaScript files </li>
+                    <li><code>grunt-contrib-cssmin</code> minify CSS files </li>
+                    <li><code>grunt-contrib-copy</code> copy files to another location </li>
+                </ul>
+                <p>
+                    It makes sense to put the source code of the site itself and its folder structure shown above
+                    into a project subfolder <code>src</code>. Then, you can write a task with the help of <code>copy</code>
+                    to create a distribution directory (e.g. <code>dist</code>) that only contains the files that should finally
+                    be uploaded to your server. There you can leave anything out that is not needed, like non-minified source files.
+                    Here is my current complete Grunt task scheme: 
+                    <strong><a href="/data/Gruntfile.js." target="_blank">Gruntfile.js</a></strong>
+                    <br><br>
+                    The next major step would be to test your site. It is definetely advised to setup a local server environemt to
+                    imitate your backend. For windows you have the possibility of installing <strong><a href="http://www.wampserver.com/en/">WAMP</a></strong>.
+                    It is the counterpart to my Linux server and runs locally. It has its "root" at <code>C:\wamp64\www</code>.
+                    After installation, you should be able to request a testpage in your browser at <code>127.0.0.1</code> or <code>localhost</code>.
+                    All that is left to do is to deploy your "dist" directory to this one. In the course of this, you can also think about the
+                    deploy mechanism to your actual backend.<br>
+                    I did write to small batch scripts to do that, <code>deploy_local.cmd</code> and <code>deploy.cmd</code>:
+                </p>
+                <div class="lb is-code">
+<pre>
+<code>
+<span class="com"> // deploy_local.cmd </span>
+<span class="gr">Robocopy.exe</span> <span class="bl">dist\html</span> <span class="or">C:\wamp64\www\</span> /MIR
+<span class="com"> // end of deploy_local.cmd </span>
+
+<span class="com"> // deploy.cmd </span>
+<span class="bl">ssh</span> <span class="or">root</span><span class="gr">@</span><span class="com">sebastian-schleemilch.de</span> 'rm -rf /var/www/html/*'
+<span class="bl">scp</span> -rp <span class="or">dist/html</span> <span class="gr">root@</span><span class="com">sebastian-schleemilch.de</span>:/var/www
+<span class="com"> // end of deploy.cmd </span>
+</code>
+</pre>             
+                </div>
+                <p>
+                    Robocopy is very useful for copying file trees with the <code>/MIR</code> option that detects newer version of files and
+                    also deletes files that are no longer in the source but in the target directory.
+                    At the backend, the script first cleans out the old content before copying the <code>dist/html</code> directory to it.
+                    I am sure one could also integrate those deploy tasks into grunt! So far for the environment. The skeleton for the actual
+                    content is there. In the next chapter we will look at a very basic functionality of a site that is still more complicated
+                    that one would think: <strong><a href="/projects/website/navigation.php">Navigation</a></strong>.<br><br>
+
+                    <strong>Design Decision:</strong> Development tool collection: 
+                </p>
+                <div class="columns has-text-centered">
+                    <div class="column ">
+                        <a href="https://www.sublimetext.com/">
+                            <img src="/img/icon_is_large_sublime.png" alt="Icon::SublimeText" width="42" height="42">
+                        </a>
+                        <p class="title is-4"> <strong> Sublime Text </strong> </p>
+                        <p class="subtitle"> Flexible fast editor </p>
+                    </div>
+                    <div class="column">
+                        <a href="https://gruntjs.com/">
+                            <img src="/img/icon_is_large_grunt.png" alt="Icon::Grunt" width="42" height="42">
+                        </a>
+                        <p class="title is-4"> <strong> Grunt </strong> </p>
+                        <p class="subtitle"> A JavaScript based Task-Runner </p>
+                    </div>
+                    <div class="column">
+                        <a href="https://www.npmjs.com/">
+                            <img src="/img/icon_is_large_npm.png" alt="Icon::npm" width="42" height="42">
+                        </a>
+                        <p class="title is-4"> <strong> npm </strong> </p>
+                        <p class="subtitle"> JavaScript package manager </p>
+                    </div>
+                </div>
+                <div class="columns has-text-centered">
+                    <div class="column ">
+                        <a href="http://sass-lang.com/">
+                            <img src="/img/icon_is_large_sass.png" alt="Icon::Sass" width="56" height="42">
+                        </a>
+                        <p class="title is-4"> <strong> Sass </strong> </p>
+                        <p class="subtitle"> Powerful CSS preprocessor </p>
+                    </div>
+                    <div class="column">
+                        <a href="http://www.wampserver.com/en/">
+                            <img src="/img/icon_is_large_wamp.png" alt="Icon::WAMP" width="42" height="42">
+                        </a>
+                        <p class="title is-4"> <strong> Wamp </strong> </p>
+                        <p class="subtitle"> A local LAMP test environment </p>
+                    </div>
+                    <div class="column">
+                        <a href="https://git-scm.com/">
+                            <img src="/img/icon_is_large_git.png" alt="Icon::Git" width="43" height="42">
+                        </a>
+                        <p class="title is-4"> <strong> Git </strong> </p>
+                        <p class="subtitle"> Version control at its finest </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

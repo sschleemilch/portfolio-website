@@ -144,7 +144,7 @@
 						<p class="subtitle"> Plain JavaScript </p>
 					</div>
 					<div class="column">
-						<a href="http://sass-lang.com/">
+						<a href="https://jquery.com/">
 							<img src="/img/icon_is_large_jquery.png" alt="Icon::jQuery" width="43" height="42">
 						</a>
 						<p class="title is-4"> <strong> jQuery </strong> </p>
