@@ -88,6 +88,16 @@ a.navbar-item,
       border-bottom: 3px solid $navbar-tab-active-border
       color: $navbar-tab-active
       padding-bottom: calc(0.5rem - 3px)
+    &.is-red
+        &:hover
+            background-color: $navbar-tab-hover-background
+            border-bottom-color: $red
+        &.is-active
+          background-color: $navbar-tab-active-background
+          border-bottom: 3px solid $red
+          color: $red
+          padding-bottom: calc(0.5rem - 3px)
+
 
 .navbar-content
   flex-grow: 1
