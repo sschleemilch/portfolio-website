@@ -312,7 +312,7 @@ $ <span class="gr">sudo</span> <span class="bl">certbot</span> --apache
                     to create a distribution directory (e.g. <code>dist</code>) that only contains the files that should finally
                     be uploaded to your server. There you can leave anything out that is not needed, like non-minified source files.
                     Here is my current complete Grunt task scheme: 
-                    <strong><a href="/data/Gruntfile.js." target="_blank">Gruntfile.js</a></strong>
+                    <strong><a href="/data/Gruntfile.js" target="_blank">Gruntfile.js</a></strong>
                     <br><br>
                     The next major step would be to test your site. It is definetely advised to setup a local server environemt to
                     imitate your backend. For windows you have the possibility of installing <strong><a href="http://www.wampserver.com/en/">WAMP</a></strong>.
