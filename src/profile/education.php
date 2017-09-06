@@ -9,11 +9,11 @@
 <section class="hero">
 	<div class="hero-body">
 		<div class="container">
-			<h1 class="title"><span class="icon is-large"><i class="fa fa-university"></i></span><strong> University</strong> education</h1>
+			<h1 class="title"><span class="icon is-large"><i class="fa fa-university"></i></span> University education</h1>
 			<div class="lb is-blue is-step">
 				<div class="columns">
 					<div class="column is-2">
-						<h1 class="title is-4">2013-2016:</h1>
+						<h1 class="title is-5">2013-2016:</h1>
 					</div>
 					<div class="column is-7 has-text-left">
 						<h1 class="title is-3">Master</h1>
@@ -27,7 +27,7 @@
 			<div class="lb is-blue is-step">
 				<div class="columns">
 					<div class="column is-2">
-						<h1 class="title is-4">2010-2013:</h1>
+						<h1 class="title is-5">2010-2013:</h1>
 					</div>
 					<div class="column is-7 has-text-left">
 						<h1 class="title is-3">Bachelor</h1>
@@ -44,11 +44,11 @@
 <section class="hero">
 	<div class="hero-body">
 		<div class="container">
-			<h1 class="title"><span class="icon is-large"><i class="fa fa-graduation-cap"></i></span><strong> School</strong> education</h1>
+			<h1 class="title"><span class="icon is-large"><i class="fa fa-graduation-cap"></i></span> School education</h1>
 			<div class="lb is-blue is-step">
 				<div class="columns">
 					<div class="column is-2">
-						<h1 class="title is-4">2000-2009:</h1>
+						<h1 class="title is-5">2000-2009:</h1>
 					</div>
 					<div class="column is-7">
 						<h1 class="title is-3">Abitur</h1>

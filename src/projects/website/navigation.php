@@ -22,9 +22,7 @@
           </p>
           <div class="columns is-centered">
               <div class="column is-2">
-                  <figure class="image is-128x128">
-                    <img src="/img/page_structure_is128x128.png">
-                  </figure>
+                <img src="/img/page_structure_is128x128.png" alt="Page Structure Header-Content-Footer" width="128" height="128">
               </div>
           </div>
           <p>

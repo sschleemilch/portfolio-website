@@ -40,7 +40,21 @@
 							<a href="https://www.linkedin.com/in/sschleemilch/">
 								<span class="icon is-medium" style="color: #0e76a8;"><i class="fa fa-linkedin-square"></i>
 								</span>
-							</a>
+							</a><br>
+                            <p><small>Visitors today:</small> <small class="has-text-primary">
+                            <?php
+                                $root = $_SERVER['DOCUMENT_ROOT'];
+                                $path = $root . "/php/visitors.php";
+                                include($path);
+                            ?></small>
+                            <small> (hits:</small><small class="has-text-grey">
+                            <?php
+                                $root = $_SERVER['DOCUMENT_ROOT'];
+                                $path = $root . "/php/hits.php";
+                                include($path);
+                            ?></small><small>)
+                            </small>
+                            </p>
 						</div>
 					</div>
 				</div>
