@@ -47,12 +47,11 @@
                                 $path = $root . "/php/visitors.php";
                                 include($path);
                             ?></small>
-                            <small> (hits:</small><small class="has-text-grey">
-                            <?php
+                            <small> (</small><small class="has-text-grey"><?php
                                 $root = $_SERVER['DOCUMENT_ROOT'];
                                 $path = $root . "/php/hits.php";
                                 include($path);
-                            ?></small><small>)
+                            ?></small><small> hits)
                             </small>
                             </p>
 						</div>

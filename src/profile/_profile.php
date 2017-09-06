@@ -10,13 +10,34 @@
 			<nav class="tabs is-boxed">
 				<ul>
 					<li class="<?php if(isset($profile_education)){echo $profile_education;} ?>">
-						<a href="education.php"></span>Education</a>
+						<a href="education.php">
+                            <span class="icon is-small">
+                                <i class="fa fa-graduation-cap"></i>
+                            </span>
+                            <span>
+                                Education
+                            </span>
+                        </a>
 					</li>
 					<li class="<?php if(isset($profile_work)){echo $profile_work;} ?>">
-						<a href="work.php">Work</a>
+						<a href="work.php">
+                            <span class="icon is-small">
+                                <i class="fa fa-briefcase"></i>
+                            </span>
+                            <span>
+                                Work
+                            </span>
+                        </a>
 					</li>
 					<li class="<?php if(isset($profile_hobbies)){echo $profile_hobbies;} ?>">
-						<a href="hobbies.php">Hobbies</a>
+						<a href="hobbies.php">
+                            <span class="icon is-small">
+                                <i class="fa fa-clock-o"></i>
+                            </span>
+                            <span>
+                                Hobbies
+                            </span>
+                        </a>
 					</li>	
 				</ul>
 			</nav>

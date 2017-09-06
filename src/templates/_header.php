@@ -21,6 +21,7 @@
 
 	  <!-- Scripts -->
 	  <script type="text/javascript" charset="utf-8" src="/jsm/nav-mobile.min.js"></script>
+      <script type="text/javascript" charset="utf-8" src="/jsm/details_dropdown.min.js"></script>
 	</head>
 
 	<!-- Body -->

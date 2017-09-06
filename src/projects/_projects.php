@@ -10,7 +10,14 @@
 			<nav class="tabs is-boxed">
 				<ul>
 					<li class="<?php if(isset($projects_website)){echo $projects_website;} ?>">
-						<a href="education.php"></span>Website</a>
+						<a href="education.php">
+                            <span class="icon is-small">
+                                <i class="fa fa-globe"></i>
+                            </span>
+                            <span>
+                                Website
+                            </span>
+                        </a>
 					</li>
 				</ul>
 			</nav>

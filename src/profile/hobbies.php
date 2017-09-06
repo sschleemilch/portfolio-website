@@ -10,7 +10,7 @@
 <section class="hero">
 	<div class="hero-body">
 		<div class="container">
-			<h1 class="title"><span class="icon is-large"><i class="fa fa-users"></i></span><strong> Hobbies</strong></h1>
+			<h1 class="title">Hobbies</h1>
 			<div class="lb is-blue is-fun has-text-centered">
 				<div class="columns">
 					<div class="column is-one-third">

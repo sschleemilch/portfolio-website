@@ -15,7 +15,7 @@ if ($file = fopen($visitorsFileName, "r")) {
     while(!feof($file)) {
         $line = fgets($file);
         $ip = trim($line);
-        if ($ip == $visitorNew){
+        if (strcmp($ip, $visitorIP) == 0){
             $visitorNew = false;
         }
         $visitorCounter = $visitorCounter + 1;
@@ -29,6 +29,7 @@ if ($visitorNew){
     }else{
         file_put_contents($visitorsFileName, "\n" . $visitorIP, FILE_APPEND);
     }
+    $visitorCounter = $visitorCounter + 1;
 }
 echo $visitorCounter;
 ?>

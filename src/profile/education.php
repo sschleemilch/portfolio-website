@@ -9,7 +9,7 @@
 <section class="hero">
 	<div class="hero-body">
 		<div class="container">
-			<h1 class="title"><span class="icon is-large"><i class="fa fa-university"></i></span> University education</h1>
+			<h1 class="title">University education</h1>
 			<div class="lb is-blue is-step">
 				<div class="columns">
 					<div class="column is-2">
@@ -44,7 +44,7 @@
 <section class="hero">
 	<div class="hero-body">
 		<div class="container">
-			<h1 class="title"><span class="icon is-large"><i class="fa fa-graduation-cap"></i></span> School education</h1>
+			<h1 class="title">School education</h1>
 			<div class="lb is-blue is-step">
 				<div class="columns">
 					<div class="column is-2">

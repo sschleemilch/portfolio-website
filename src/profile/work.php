@@ -10,7 +10,7 @@
 <section class="hero">
 	<div class="hero-body">
 		<div class="container">
-			<h1 class="title"><span class="icon is-large"><i class="fa fa-briefcase"></i></span> Work experience</h1>
+			<h1 class="title">Work experience</h1>
 			<div class="lb is-blue is-step">
 				<div class="columns">
 					<div class="column is-2">
@@ -24,6 +24,26 @@
 						<a href="https://www.bosch.com/de/"><img src="/img/logo_bosch.png" alt="Logo:Bosch_GmbH" width="200" height="45"></a>
 					</div>
 				</div>
+                <hr> 
+                <button class="button is-info is-outlined" onclick="toggle_details('btn_work_details_bosch','work_details_bosch'); this.blur();" id="btn_work_details_bosch">
+                  <span>Details</span>
+                  <span class="icon is-small">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+                <span><br></span>
+                <div class="columns" id="work_details_bosch" style="display: none;">
+                    <div class="column is-2">
+                        <h1 class="title is-5">10/2014-07/2015:</h1>
+                    </div>
+                    <div class="column is-7 has-text-left">
+                        <h1 class="title is-3">BMW M GmbH</h1>
+                        <h2 class="subtitle is-5">Working Student: OBD department</h2>
+                    </div>
+                    <div class="column is-3 has-text-right">
+                        <a href="https://www.bmw-m.com/de/index.html"><img src="/img/logo_bmw.png" alt="Logo:BMW_M_GmbH" width="100" height="100"></a>
+                    </div>
+                </div>
 			</div>
 		</div>
 	</div>
@@ -31,7 +51,7 @@
 <section class="hero">
 	<div class="hero-body">
 		<div class="container">
-			<h1 class="title"><span class="icon is-large"><i class="fa fa-university"></i></span> Work experience while studying</h1>
+			<h1 class="title">Work experience while studying</h1>
 			<div class="lb is-blue is-step">	
 				<div class="columns">
 					<div class="column is-2">
