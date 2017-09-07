@@ -32,13 +32,13 @@
 					<a class="navbar-item" href="/index.php">
 						<img src="/img/logo_schleemilch_small_milk.png" alt="Schleemilch:Sebastian" width="70" height="28">
 					</a>
-				</div>
-				<div class="navbar-burger" onclick="openMobileNav()">
-	      			<span></span>
-	      			<span></span>
-	      			<span></span>
-	    		</div>
-	    		<div class="navbar-menu">
+    				<div class="navbar-burger burger" data-target="navMenuMobile">
+    	      			<span></span>
+    	      			<span></span>
+    	      			<span></span>
+    	    		</div>
+                </div>
+	    		<div class="navbar-menu" id="navMenuMobile">
 	    			<div class="navbar-start">
 	    				<a href="/home.php" class="navbar-item <?php if(isset($home)){echo $home;} ?>"> 
 	    					<span class="icon">
@@ -108,48 +108,3 @@
 	    		</div>
     		</div>
 		</navbar>
-		<aside class="menu nav-mobile" id="nav-mobile">
-			<ul class="menu-list">
-				<li><a href="/home.php" class="<?php if(isset($home)){echo $home;} ?>">
-						<span class="icon">
-	  						<i class="fa fa-home"></i>
-						</span>
-						Home
-					</a>
-				</li>
-				<li><a href="/profile/education.php" class="<?php if(isset($profile)){echo $profile;} ?>">
-						<span class="icon">
-	  						<i class="fa fa-vcard-o"></i>
-						</span>
-						Profile
-					</a>
-				</li>
-				<li><a href="/projects/website/introduction.php" class="<?php if(isset($projects)){echo $projects;} ?>">
-						<span class="icon">
-	  						<i class="fa fa-rocket"></i>
-						</span>
-						Projects
-					</a>
-				</li>
-				<li><a href="/tools.php" class="<?php if(isset($tools)){echo $tools;} ?>">
-						<span class="icon">
-	  						<i class="fa fa-wrench"></i>
-						</span>
-						Tools
-					</a>
-				</li>
-				<li><a href="/contact.php" class="<?php if(isset($contact)){echo $contact;} ?>">
-						<span class="icon">
-	  						<i class="fa fa-envelope-o"></i>
-						</span>
-						Contact
-					</a>
-				</li>
-				<li><a href="javascript:void(0)" onclick="closeMobileNav()">
-						<span class="icon">
-	  						<i class="fa fa-angle-up" style="color: #FF3860"></i>
-						</span>
-					</a>
-				</li>
-			</ul>
-		</aside>
