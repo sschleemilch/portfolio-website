@@ -10,12 +10,20 @@ div.lb
 		&:before
 			color: $blue-invert
 			background: $blue
+	&.is-dark
+		border: 1px solid $dark
+		&:before
+			color: $dark-invert
+			background: $dark
 	&.is-step
 		&:before
 			content: "Step"
 	&.is-fun
 		&:before
 			content: "Fun"
+	&.is-milestone
+		&:before
+			content: "Milestone"
 	&:before
 		bottom: 100%
 		display: inline-block
