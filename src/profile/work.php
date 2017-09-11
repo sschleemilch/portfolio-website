@@ -224,7 +224,14 @@
                             <span><br></span>
                             <div id="work_details_iis" style="display: none;">
                                 <hr>
-                                <p> Details... </p>
+                                <h1 class="title is-5">Task Description</h1>
+                                <div class="content is-small">
+                                    <p>
+                                        First programming experience in real life projects with microcontrollers from Atmel.
+                                        The main application was based on wireless communication at 868 MHz and acceleration sensors
+                                        for a boxing glove.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -259,7 +266,14 @@
                             <span><br></span>
                             <div id="work_details_fau" style="display: none;">
                                 <hr>
-                                <p> Details... </p>
+                                <h1 class="title is-5">Task Description</h1>
+                                <div class="content is-small">
+                                    <p>
+                                        I was tutor for Java based exercises and did the grading for them. In this round I also held exercises
+                                        to repeat lecture content in a more practical context and live demos including Java and general computer
+                                        science topics.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
