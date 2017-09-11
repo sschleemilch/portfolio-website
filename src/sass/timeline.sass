@@ -18,34 +18,23 @@ $dimensions: 16 24 32 48 64 96 128 !default
     position: relative
     border-left: $timeline-line
     margin-left: calc( #{$timeline-header-width} / 2 )
-    //padding-bottom: 2em
-    &::before
-      background: $timeline-marker-background-color
-      border: $timeline-marker-border
-      border-radius: 100%
-      content: ""
-      display: block
-      height: .8rem
-      left: -.45em
-      position: absolute
-      top: 1.2rem
-      width: .8rem
 
     .timeline-marker
       position: absolute
-      width: .8em
-      left: -.4em
-      height: .8em
-      top: 1.2em
+      width: 1.5rem
+      left: -.85em
+      height: 1.5rem
+      top: 6rem
+      content: ""
+      background: $timeline-marker-background-color
+      border: $timeline-marker-border
+      border-radius: 100%
       .image
         @each $dimension in $dimensions
           &.is-#{$dimension}x#{$dimension}
             height: $dimension * 1px
             width: $dimension * 1px
             left: ( ( $dimension / 2 ) - 4 ) * -.9px
-        background: $timeline-marker-background-color
-        border: $timeline-marker-border
-        border-radius: 100%
         display: block
         overflow: hidden
       &.is-icon
@@ -53,9 +42,6 @@ $dimensions: 16 24 32 48 64 96 128 !default
         width: 1.5rem
         left: -.8rem
         padding: $timeline-icon-size / 3
-        background: $timeline-marker-background-color
-        border: $timeline-marker-border
-        border-radius: 100%
         > i
           color: $timeline-marker-color
           font-size: $timeline-icon-size !important
@@ -66,15 +52,23 @@ $dimensions: 16 24 32 48 64 96 128 !default
         width: 100%
       .heading
         font-weight: $weight-semibold
+      &::before
+        background-color: $info
+        display: block
+        height: .2rem
+        left: .5em
+        content: ""
+        position: absolute
+        top: 6.65rem
+        width: 1.5rem
 
     @each $name, $pair in $colors
       $color: nth($pair, 1)
       $color-invert: nth($pair, 2)
       &.is-#{$name}
         border-left-color: $color
-        &::before
-          border-color: $color !important
         .timeline-marker
+          border-color: $color !important
           .image
             border-color: $color !important
 
@@ -82,3 +76,6 @@ $dimensions: 16 24 32 48 64 96 128 !default
             border-color: $color !important
             > i
               color: $color !important
+        .timeline-content
+          &::before
+            background-color: $color

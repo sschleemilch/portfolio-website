@@ -1,23 +1,26 @@
 div.lb
 	border-radius: 0px 3px 3px 3px
 	position: relative
-	border: 1px solid $red
+	border: 2px solid $red
 	padding: 1.5rem
 	margin-top: 2rem
 	margin-bottom: 1rem
-	&.is-blue
-		border: 1px solid $blue
+
+	@each $name, $pair in $colors
+		$color: nth($pair, 1)
+		$color-invert: nth($pair, 2)
+		&.is-#{$name}
+			border: 2px solid $color
+			&:before
+				color: $color-invert
+				background: $color
+
+	&.is-done
 		&:before
-			color: $blue-invert
-			background: $blue
-	&.is-dark
-		border: 1px solid $dark
+			content: "done"
+	&.is-active
 		&:before
-			color: $dark-invert
-			background: $dark
-	&.is-step
-		&:before
-			content: "Step"
+			content: "active"
 	&.is-fun
 		&:before
 			content: "Fun"
@@ -29,7 +32,7 @@ div.lb
 		display: inline-block
 		font-size: 7px
 		font-weight: bold
-		left: -1px
+		left: -2px
 		letter-spacing: 1px
 		padding: 3px 5px
 		position: absolute

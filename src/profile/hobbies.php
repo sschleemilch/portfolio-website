@@ -11,7 +11,7 @@
 	<div class="hero-body">
 		<div class="container">
 			<h1 class="title">Hobbies</h1>
-			<div class="lb is-blue is-fun has-text-centered">
+			<div class="lb is-info is-fun has-text-centered">
 				<div class="columns">
 					<div class="column is-one-third">
 						<span class="icon is-large" style="color: #FF3860"><i class="fa fa-heartbeat"></i></span>

@@ -15,9 +15,11 @@
                     <span class="tag is-large is-info">03/2016</span>
                 </li>
 	           <li class="timeline-item is-info">
-                    <div class="timeline-marker"></div>
+                    <div class="timeline-marker is-icon">
+                        <i class="fa fa-check"></i>
+                    </div>
                     <div class="timeline-content is-100">
-            			<div class="lb is-blue is-step">
+            			<div class="lb is-info is-done">
             				<div class="columns">
             					<div class="column is-2">
             						<h1 class="title is-5">2013-2016:</h1>
@@ -37,9 +39,11 @@
                     <span class="tag is-medium is-dark">2013</span>
                 </li>
                 <li class="timeline-item is-info">
-                    <div class="timeline-marker"></div>
+                    <div class="timeline-marker is-icon">
+                        <i class="fa fa-check"></i>
+                    </div>
                     <div class="timeline-content is-100">
-                        <div class="lb is-blue is-step">
+                        <div class="lb is-info is-done">
                             <div class="columns">
                                 <div class="column is-2">
                                     <h1 class="title is-5">2010-2013:</h1>
@@ -59,9 +63,11 @@
                     <span class="tag is-medium is-dark">2009 - End of basic school</span>
                 </li>
                 <li class="timeline-item is-info">
-                    <div class="timeline-marker"></div>
+                    <div class="timeline-marker is-icon">
+                        <i class="fa fa-check"></i>
+                    </div>
                     <div class="timeline-content is-100">
-                        <div class="lb is-blue is-step">
+                        <div class="lb is-info is-done">
                             <div class="columns">
                                 <div class="column is-2">
                                     <h1 class="title is-5">2000-2009:</h1>

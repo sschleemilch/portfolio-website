@@ -15,11 +15,11 @@
                 <li class="timeline-header">
                     <span class="tag is-large is-info">Present</span>
                 </li>
-                <li class="timeline-item is-info">
+                <li class="timeline-item is-primary">
                     <div class="timeline-marker">
                     </div>
                     <div class="timeline-content is-100">
-                        <div class="lb is-blue is-step" style="min-width: 200px">
+                        <div class="lb is-primary is-active" style="min-width: 200px">
                             <div class="columns">
                                 <div class="column is-2">
                                     <h1 class="title is-5">06/2016-present:</h1>
@@ -32,7 +32,8 @@
                                     <a href="https://www.bosch.com/de/"><img src="/img/logo_bosch.png" alt="Logo:Bosch_GmbH" width="200" height="45"></a>
                                 </div>
                             </div>
-                            <button class="button is-info is-outlined" onclick="toggle_details('btn_work_details_bosch','work_details_bosch'); this.blur();" id="btn_work_details_bosch">
+                            
+                            <button class="button is-primary is-outlined" onclick="toggle_details('btn_work_details_bosch','work_details_bosch'); this.blur();" id="btn_work_details_bosch">
                               <span>Details</span>
                               <span class="icon is-small">
                                 <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -40,7 +41,23 @@
                             </button>
                             <span><br></span>
                             <div id="work_details_bosch" style="display: none;">
-                                <h1 class="title is-4">Job Position:</h1>
+                                <hr>
+                                <h1 class="title is-4">Job Description</h1>
+                                <div class="content">
+                                    <p>
+                                        I am a Software Integrator in video based driver assistance products. More specific, involved in the
+                                        platform development that will serve several customers.<br>
+                                        Therefore, I am working daily with the whole product lifecycle software including but not limited to:
+                                        <ul>
+                                            <li>Large scaled Continuous Integration</li>
+                                            <li>Static Code Analysis</li>
+                                            <li>Unit-Test-Frameworks</li>
+                                            <li>Repository management and maintenance</li>
+                                            <li>Compiler configuration</li>
+                                            <li>First level debug</li>
+                                        </ul>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -49,10 +66,11 @@
                     <span class="tag is-medium is-dark">03/2016 - End of Studies</span>
                 </li>
                 <li class="timeline-item is-info">
-                    <div class="timeline-marker">
+                    <div class="timeline-marker is-icon">
+                        <i class="fa fa-check"></i>
                     </div>
                     <div class="timeline-content is-100">
-                        <div class="lb is-blue is-step">
+                        <div class="lb is-info is-done">
                             <div class="columns">
                                 <div class="column is-2">
                                     <h1 class="title is-5">10/2014-07/2015:</h1>
@@ -73,6 +91,7 @@
                             </button>
                             <span><br></span>
                             <div id="work_details_bmw" style="display: none;">
+                                <hr>
                                 <p> Details...</p>
                             </div>
                         </div>
@@ -82,10 +101,11 @@
                     <span class="tag is-medium is-dark">2014</span>
                 </li>
                 <li class="timeline-item is-info">
-                    <div class="timeline-marker">
+                    <div class="timeline-marker is-icon">
+                        <i class="fa fa-check"></i>
                     </div>
                     <div class="timeline-content is-100">
-                        <div class="lb is-blue is-step">
+                        <div class="lb is-info is-done">
                             <div class="columns">
                                 <div class="column is-2">
                                     <h1 class="title is-5">11/2013-09/2014:</h1>
@@ -106,16 +126,18 @@
                             </button>
                             <span><br></span>
                             <div id="work_details_tum" style="display: none;">
+                                <hr>
                                 <p> Details... </p>
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="timeline-item is-info">
-                    <div class="timeline-marker">
+                    <div class="timeline-marker is-icon">
+                        <i class="fa fa-check"></i>
                     </div>
                     <div class="timeline-content is-100">
-                        <div class="lb is-blue is-step">
+                        <div class="lb is-info is-done">
                             <div class="columns">
                                 <div class="column is-2">
                                     <h1 class="title is-5">05/2013-09/2013:</h1>
@@ -136,6 +158,7 @@
                             </button>
                             <span><br></span>
                             <div id="work_details_iisb" style="display: none;">
+                                <hr>
                                 <p> Details... </p>
                             </div>
                         </div>
@@ -145,10 +168,11 @@
                     <span class="tag is-medium is-dark">2013</span>
                 </li>
                 <li class="timeline-item is-info">
-                    <div class="timeline-marker">
+                    <div class="timeline-marker is-icon">
+                        <i class="fa fa-check"></i>
                     </div>
                     <div class="timeline-content is-100">
-                        <div class="lb is-blue is-step">
+                        <div class="lb is-info is-done">
                             <div class="columns">
                                 <div class="column is-2">
                                     <h1 class="title is-5">10/2012-04/2013:</h1>
@@ -169,6 +193,7 @@
                             </button>
                             <span><br></span>
                             <div id="work_details_iis" style="display: none;">
+                                <hr>
                                 <p> Details... </p>
                             </div>
                         </div>
@@ -178,10 +203,11 @@
                     <span class="tag is-medium is-dark">2012</span>
                 </li>
                 <li class="timeline-item is-info">
-                    <div class="timeline-marker">
+                    <div class="timeline-marker is-icon">
+                        <i class="fa fa-check"></i>
                     </div>
                     <div class="timeline-content is-100">
-                        <div class="lb is-blue is-step">
+                        <div class="lb is-info is-done">
                             <div class="columns">
                                 <div class="column is-2">
                                     <h1 class="title is-5">10/2011-10/2012:</h1>
@@ -202,6 +228,7 @@
                             </button>
                             <span><br></span>
                             <div id="work_details_fau" style="display: none;">
+                                <hr>
                                 <p> Details... </p>
                             </div>
                         </div>
