@@ -13,7 +13,7 @@
 			<h1 class="title">Work experience</h1>
             <ul class="timeline">
                 <li class="timeline-header">
-                    <span class="tag is-large is-info">Present</span>
+                    <span class="tag is-large is-primary">Present</span>
                 </li>
                 <li class="timeline-item is-primary">
                     <div class="timeline-marker">
@@ -42,19 +42,22 @@
                             <span><br></span>
                             <div id="work_details_bosch" style="display: none;">
                                 <hr>
-                                <h1 class="title is-4">Job Description</h1>
-                                <div class="content">
+                                <h1 class="title is-5">Job Description</h1>
+                                <div class="content is-small">
                                     <p>
-                                        I am a Software Integrator in video based driver assistance products. More specific, involved in the
+                                        I am a Software Integrator in video based driver assistance products in Stuttgart Leonberg.
+                                        More specific, involved in the
                                         platform development that will serve several customers.<br>
                                         Therefore, I am working daily with the whole product lifecycle software including but not limited to:
                                         <ul>
-                                            <li>Large scaled Continuous Integration</li>
+                                            <li>Large scaled Continuous Integration (Jenkins, Groovy, Python, ...)</li>
                                             <li>Static Code Analysis</li>
                                             <li>Unit-Test-Frameworks</li>
-                                            <li>Repository management and maintenance</li>
+                                            <li>Repository management and maintenance (Git, Bitbucket)</li>
+                                            <li>Development Workflow</li>
                                             <li>Compiler configuration</li>
                                             <li>First level debug</li>
+                                            <li>Coding Guidelines and Reviews (C, C++, Python, Groovy, ...) </li>
                                         </ul>
                                     </p>
                                 </div>
@@ -92,7 +95,16 @@
                             <span><br></span>
                             <div id="work_details_bmw" style="display: none;">
                                 <hr>
-                                <p> Details...</p>
+                                <h1 class="title is-5">Task Description</h1>
+                                <div class="content is-small">
+                                    <p>
+                                        I was a working student in the OBD (On Board Diagnosis) department of the BMW M GmbH
+                                        in Munich 10 hours/week while studying. Mainly, I did large automated data processing and filtering
+                                        using <a href="https://de.mathworks.com/products/matlab.html">Matlab</a> and Python.
+                                        Also, I was involved in small user oriented frontend applications using 
+                                        <a href="https://msdn.microsoft.com/de-de/library/office/ee814737(v=office.14).aspx">VBA</a>.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -127,7 +139,15 @@
                             <span><br></span>
                             <div id="work_details_tum" style="display: none;">
                                 <hr>
-                                <p> Details... </p>
+                                <h1 class="title is-5">Task Description</h1>
+                                <div class="content is-small">
+                                    <p>
+                                        I was a workung student at the Energy economy and application technique <a href="https://www.ewk.ei.tum.de/startseite/">EWK</a>.
+                                        It was about gathering data from different weather stations and process them accordingly to
+                                        generate a database about wheather parameters over a long time period. The technology for implementing
+                                        was Matlab.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -159,7 +179,17 @@
                             <span><br></span>
                             <div id="work_details_iisb" style="display: none;">
                                 <hr>
-                                <p> Details... </p>
+                                <h1 class="title is-5">Task Description</h1>
+                                <div class="content is-small">
+                                    In combination with my Bachelor's thesis, I did extend my involvement for a few ours in the same
+                                    domain. It was about inductive charging of automotive vehicles. Main topics where:
+                                    <ul>
+                                        <li><a href="http://www.atmel.com/">Atmel</a> Microcontroller Programming in C</li>
+                                        <li>Hardware layouting and routing with <a href="https://www.autodesk.de/products/eagle/overview">EAGLE</a></li>
+                                        <li><a href="http://www.linear.com/designtools/software/">LTSpice</a> dynamic hardware behavior simulation </li>
+                                        <li>Power electronics (coils, relais)</li> 
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
