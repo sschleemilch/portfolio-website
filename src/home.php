@@ -21,12 +21,12 @@
 			<div class="hero-body">
 				<div class="container has-text-centered">
 					<h1 class="title"><span class="icon is-large"><i class="fa fa-question-circle-o"></i></span>
-						<br><strong>What </strong> is this page <strong> about</strong>?
+						<br><strong>What </strong> this page is <strong> about</strong>
 					</h1>
 					<br>
 					<div class="columns">
 						<a class="column" href="/profile/education.php">
-							<span class="icon is-large" style="color: #3273DC"><i class="fa fa-user-circle-o"></i></span>
+							<span class="icon is-large" style="color: #3273DC"><i class="fa fa-user"></i></span>
 							<p class="title is-4"> <strong> Portfolio </strong> </p>
 							<p class="subtitle"> My past and present </p>
 						</a>
