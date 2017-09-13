@@ -81,40 +81,36 @@
 				<p>
 					After asking myself those questions I came to the result that I want to have the flexibility of adapting the look and feel myself
 					easily while having a solid base that scales for mobile. A factor for me was also the overall size and the percentage I am planning to
-					use. I found <strong><a href="http://bulma.io/">Bulma</a></strong> which fulfills almost everything I expected from a CSS framework without
+					use. I found <a href="http://bulma.io/">Bulma</a> which fulfills almost everything I expected from a CSS framework without
 					taking the possibility to introduce own changes.
 					Just for completeness, there are of course a lot of alternatives with it's each up- and downsides regarding the points above:
 				</p>
 				<ul>
-					<li><strong><a href="http://getbootstrap.com/">Bootstrap</a></strong>, one of the most popular and feature rich ones</li>
-					<li><strong><a href="https://purecss.io/">Pure.css</a></strong>, extremely small (3.8 KB)</li>
-					<li><strong><a href="http://materializecss.com/">Materialize</a></strong></li>
-					<li><strong><a href="http://getskeleton.com/">Skeleton</a></strong>, also very small</li>
+					<li><a href="http://getbootstrap.com/">Bootstrap</a>, one of the most popular and feature rich ones</li>
+					<li><a href="https://purecss.io/">Pure.css</a>, extremely small (3.8 KB)</li>
+					<li><a href="http://materializecss.com/">Materialize</a></li>
+					<li><a href="http://getskeleton.com/">Skeleton</a>, also very small</li>
 					<li>...</li>
 				</ul>
 				<p>
-					I also did choose <strong>Bulma</strong> cause of its CSS-Preprocessor technology: <strong><a href="http://sass-lang.com/">Sass</a></strong>.<br>
+					I also did choose Bulma cause of its CSS-Preprocessor technology: <a href="http://sass-lang.com/">Sass</a>.<br>
 					CSS-Preprocessors will make your daily life as a CSS programmer a lot easier. In my opinion, CSS lacks in regards to modularity, duplicated code 
-					and maintainability. With a preprocessor like Sass and <strong><a href="http://lesscss.org/">Less</a></strong> you will have features like splitting
+					and maintainability. With a preprocessor like Sass and <a href="http://lesscss.org/">Less</a> you will have features like splitting
 					your css code into different files and including them, use variables, use functions and a lot of other nice features. In the end, it will compile to
 					normal CSS code. Since overall size matters, you should consider using even a step after generating the CSS from Sass: Minify it. It will be not human friendly readable then. But since you as a developer will have the sources in Sass, you should not care too much about it. <br><br>
 					<strong>Design Decision</strong>: CSS Framework
 				</p>
 				<div class="columns has-text-centered">
-					<div class="column ">
-						<a href="http://bulma.io/">
-							<img src="/img/icon_is_large_bulma.png" alt="Icon::Bulma" width="42" height="42">
-						</a>
+					<a class="column" href="http://bulma.io/">
+						<img src="/img/icon_is_large_bulma.png" alt="Icon::Bulma" width="42" height="42">
 						<p class="title is-4"> <strong> Bulma </strong> </p>
 						<p class="subtitle"> As the main extensible framework </p>
-					</div>
-					<div class="column">
-						<a href="http://sass-lang.com/">
-							<img src="/img/icon_is_large_sass.png" alt="Icon::Sass" width="56" height="42">
-						</a>
+					</a>
+					<a class="column" href="http://sass-lang.com/">
+						<img src="/img/icon_is_large_sass.png" alt="Icon::Sass" width="56" height="42">
 						<p class="title is-4"> <strong> Sass </strong> </p>
 						<p class="subtitle"> As preprocessor and origin of Bulma </p>
-					</div>
+					</a>
 				</div>
 			</div>
 			<h1 class="title is-4"><strong>JavaScript Frameworks</strong></h1>
@@ -125,31 +121,27 @@
 					In my case, I kept it simple and am not using one of the larger frameworks like:
 				</p>
 				<ul>
-					<li><strong><a href="https://angular.io/">AngularJS</a></strong>, MVC framework for every need</li>
-					<li><strong><a href="https://facebook.github.io/react/">ReactJS</a></strong>, more like a JavaScript library</li>
-					<li><strong><a href="https://vuejs.org/">VueJS</a></strong>, minimal, focus on performance</li>
+					<li><a href="https://angular.io/">AngularJS</a>, MVC framework for every need</li>
+					<li><a href="https://facebook.github.io/react/">ReactJS</a>, more like a JavaScript library</li>
+					<li><a href="https://vuejs.org/">VueJS</a>, minimal, focus on performance</li>
 					<li> And of course countless more...</li>
 				</ul>
 				<p>
 				Like I said, I wanted to keep the usage of JavaScript on a minimum and therefore am using only vanilla JavaScript
-				and <strong><a href="https://jquery.com/">jQuery</a></strong> which will make your daily JavaScript life easier.<br><br>
+				and <a href="https://jquery.com/">jQuery</a> which will make your daily JavaScript life easier.<br><br>
 				<strong>Design Decision:</strong> JavaScript framework/library:
 				</p>
 				<div class="columns has-text-centered">
-					<div class="column ">
-						<a href="https://www.javascript.com/">
-							<img src="/img/icon_is_large_javascript.png" alt="Icon::Javascript" width="37" height="42">
-						</a>
+					<a class="column" href="https://www.javascript.com/">
+						<img src="/img/icon_is_large_javascript.png" alt="Icon::Javascript" width="37" height="42">
 						<p class="title is-4"> <strong> JavaScript </strong> </p>
 						<p class="subtitle"> Plain JavaScript </p>
-					</div>
-					<div class="column">
-						<a href="https://jquery.com/">
-							<img src="/img/icon_is_large_jquery.png" alt="Icon::jQuery" width="43" height="42">
-						</a>
+					</a>
+					<a class="column" href="https://jquery.com/">
+						<img src="/img/icon_is_large_jquery.png" alt="Icon::jQuery" width="43" height="42">
 						<p class="title is-4"> <strong> jQuery </strong> </p>
 						<p class="subtitle">A comfortable and feature rith JavaScript library</p>
-					</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -165,34 +157,26 @@
 					Again, here you have the choice of I would say four main technologies that are being used these days:
 				</p>
 				<div class="columns has-text-centered">
-					<div class="column">
-						<a href="https://nodejs.org/en/">
-							<img src="/img/icon_is_large_nodejs.png" alt="Icon::NodeJS" width="37" height="42">
-						</a>
+					<a class="column" href="https://nodejs.org/en/">
+						<img src="/img/icon_is_large_nodejs.png" alt="Icon::NodeJS" width="37" height="42">
 						<p class="title is-4"> <strong> NodeJS </strong> </p>
 						<p class="subtitle"> Use your JavaScript knowledge </p>
-					</div>
-					<div class="column">
-						<a href="http://php.net/manual/de/intro-whatis.php">
-							<img src="/img/icon_is_large_php.png" alt="Icon::PHP" width="42" height="42">
-						</a>
+					</a>
+					<a class="column" href="http://php.net/manual/de/intro-whatis.php">
+						<img src="/img/icon_is_large_php.png" alt="Icon::PHP" width="42" height="42">
 						<p class="title is-4"> <strong> PHP </strong> </p>
 						<p class="subtitle"> The oldest, but still great </p>
-					</div>
-					<div class="column">
-						<a href="https://www.djangoproject.com/foundation/">
-							<img src="/img/icon_is_large_django.png" alt="Icon::Django" width="42" height="42">
-						</a>
+					</a>
+					<a class="column" href="https://www.djangoproject.com/foundation/">
+						<img src="/img/icon_is_large_django.png" alt="Icon::Django" width="42" height="42">
 						<p class="title is-4"> <strong> Django </strong> </p>
-						<p class="subtitle"> Based on Pythong </p>
-					</div>
-					<div class="column">
-						<a href="https://www.ruby-lang.org/de/">
-							<img src="/img/icon_is_large_ruby.png" alt="Icon::Ruby" width="42" height="42">
-						</a>
+						<p class="subtitle"> Based on Python </p>
+					</a>
+					<a class="column" href="https://www.ruby-lang.org/de/">
+						<img src="/img/icon_is_large_ruby.png" alt="Icon::Ruby" width="42" height="42">
 						<p class="title is-4"> <strong> Ruby </strong> </p>
 						<p class="subtitle"> Good choice if already familiar with </p>
-					</div>
+					</a>
 				</div>
 				<p>
 					For me, the decision was about simplicity. Since I do not have and need computing intensive
@@ -204,13 +188,11 @@
 					<strong>Design Decision:</strong> Backend technology:
 				</p>
 				<div class="columns has-text-centered is-centered">
-					<div class="column">
-						<a href="http://php.net/manual/de/intro-whatis.php">
-							<img src="/img/icon_is_large_php.png" alt="Icon::PHP" width="42" height="42">
-						</a>
+					<a class="column" href="http://php.net/manual/de/intro-whatis.php">
+						<img src="/img/icon_is_large_php.png" alt="Icon::PHP" width="42" height="42">
 						<p class="title is-4"> <strong> PHP </strong> </p>
 						<p class="subtitle"> Simple, pure, good HTML integration</p>
-					</div>
+					</a>
 				</div>
 				<p>
 					So far so good. The base technologies are decided.<br>

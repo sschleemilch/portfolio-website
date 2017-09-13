@@ -139,27 +139,21 @@
 			<h1 class="title"><span class="icon is-large"><i class="fa fa-comments-o"></i></span><br>Social Media Channels</h1>
 			<br>
 			<div class="columns">
-				<div class="column is-one-third">
-					<a href="https://www.facebook.com/sebastian.schleemilch">
-						<span class="icon is-large" style="color: #3b5998"><i class="fa fa-facebook-square"></i></span>
-						<p class="title is-4"> <strong>Facebook</strong> </p>
-						<p class="subtitle"> Active at least once a week </p>
-					</a>
-				</div>
-				<div class="column is-one-third">
-					<a href="https://www.xing.com/profile/Sebastian_Schleemilch2?sc_o=mxb_p">
-						<span class="icon is-large" style="color: #126567"><i class="fa fa-xing-square"></i></span>
-						<p class="title is-4"> <strong>Xing</strong> </p>
-						<p class="subtitle"> Most likely immediate response (Android app) </p>
-					</a>
-				</div>
-				<div class="column is-one-third">
-					<a href="https://www.linkedin.com/in/sschleemilch/">
-						<span class="icon is-large" style="color: #0e76a8"><i class="fa fa-linkedin-square"></i></span>
-						<p class="title is-4"> <strong>Linked-In</strong> </p>
-						<p class="subtitle"> Most likely immediate response (Android app) </p>
-					</a>
-				</div>
+				<a class="column is-one-third" href="https://www.facebook.com/sebastian.schleemilch">
+					<span class="icon is-large" style="color: #3b5998"><i class="fa fa-facebook-square"></i></span>
+					<p class="title is-4"> <strong>Facebook</strong> </p>
+					<p class="subtitle"> Active at least once a week </p>
+				</a>
+				<a class="column is-one-third" href="https://www.xing.com/profile/Sebastian_Schleemilch2?sc_o=mxb_p">
+					<span class="icon is-large" style="color: #126567"><i class="fa fa-xing-square"></i></span>
+					<p class="title is-4"> <strong>Xing</strong> </p>
+					<p class="subtitle"> Most likely immediate response (Android app) </p>
+				</a>
+				<a class="column is-one-third" href="https://www.linkedin.com/in/sschleemilch/">
+					<span class="icon is-large" style="color: #0e76a8"><i class="fa fa-linkedin-square"></i></span>
+					<p class="title is-4"> <strong>Linked-In</strong> </p>
+					<p class="subtitle"> Most likely immediate response (Android app) </p>
+				</a>
 			</div>
 		</div>
 	</div>

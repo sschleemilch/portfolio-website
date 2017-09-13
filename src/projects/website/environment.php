@@ -33,7 +33,7 @@
 					your server and offering prebuilt images and administration tools.
 					In my case, I went for a Virtual Linux Ubuntu 16.04 Server where I do have root privileges.
 					I am quite familiar with Linux and therefore this choice was being made before even looking
-					at different providers. I chose <strong><a href="https://www.server4you.de/">Server4You</a></strong>
+					at different providers. I chose <a href="https://www.server4you.de/">Server4You</a>
 					which offers that kind of server with the following specs for 5€/month:
 				</p>
 				<ul>
@@ -47,33 +47,27 @@
 					are pretty ok for me and so far I did not notice any performance issues.
 					I did chose the 100 GB SSD since I also do not expect to store huge amount of data on the server even though
 					I might add an SQL database in the future. For actually delivering content, you need of course a website server
-					software that handles HTTP requests. I chose <strong><a href="https://httpd.apache.org/">Apache</a></strong> for that
-					purpose but of course there are other choices out there like <strong><a href="https://nginx.org/en/">Nginx</a></strong>.
+					software that handles HTTP requests. I chose <a href="https://httpd.apache.org/">Apache</a> for that
+					purpose but of course there are other choices out there like <a href="https://nginx.org/en/">Nginx</a>.
 					<br><br>
 					<strong>Design Decision</strong>: Backend HW, OS, SW 
 				</p>
 				<div class="columns has-text-centered">
-					<div class="column ">
-						<a href="https://www.server4you.de/virtual-server">
-							<img src="/img/icon_is_large_server.png" alt="Icon::Server" width="42" height="42">
-						</a>
+					<a class="column" href="https://www.server4you.de/virtual-server">
+						<img src="/img/icon_is_large_server.png" alt="Icon::Server" width="42" height="42">
 						<p class="title is-4"> <strong> vServer </strong> </p>
 						<p class="subtitle"> 2vCores, 4GB RAM, 100 GB SSD </p>
-					</div>
-					<div class="column">
-						<a href="https://www.ubuntu.com/">
-							<img src="/img/icon_is_large_ubuntu.png" alt="Icon::Ubuntu" width="42" height="42">
-						</a>
+					</a>
+					<a class="column" href="https://www.ubuntu.com/">
+						<img src="/img/icon_is_large_ubuntu.png" alt="Icon::Ubuntu" width="42" height="42">
 						<p class="title is-4"> <strong> Ubuntu </strong> </p>
 						<p class="subtitle"> Popular Linux OS with large community </p>
-					</div>
-					<div class="column">
-						<a href="https://httpd.apache.org/">
-							<img src="/img/icon_is_large_apache.png" alt="Icon::Apache" width="43" height="42">
-						</a>
+					</a>
+					<a class="column" href="https://httpd.apache.org/">
+						<img src="/img/icon_is_large_apache.png" alt="Icon::Apache" width="43" height="42">
 						<p class="title is-4"> <strong> Apache </strong> </p>
 						<p class="subtitle"> Very common HTTP Server </p>
-					</div>
+					</a>
 				</div>
 				<h1 class="title is-4"><strong>Installation</strong></h1>
 				<p>
@@ -122,9 +116,9 @@ $</span> <span class="bl">apt-get</span> <span class="com">install</span> apache
                 <p>
                     Additionally, you should think about setting up HTTPS/SSL for your side in order to provide a secure connection to your
                     webpage. You can get a non-self signed certificate by paying for it. The other possibility is to use
-                    <strong><a href="https://letsencrypt.org/">Let's Encrypt</a></strong> which is a free alternative and very easy to setup.
+                    <a href="https://letsencrypt.org/">Let's Encrypt</a> which is a free alternative and very easy to setup.
                     It offers scripts for automatically deploying valid certificates for your website using a python script called
-                    <strong><a href="https://certbot.eff.org/#ubuntuxenial-apache">CertBot</a></strong>. For ubuntu and Apache, using that script is
+                    <a href="https://certbot.eff.org/#ubuntuxenial-apache">CertBot</a>. For ubuntu and Apache, using that script is
                     quite simple:
                 </p>
                  <div class="lb is-code">
@@ -178,16 +172,16 @@ $ <span class="gr">sudo</span> <span class="bl">certbot</span> --apache
                     For the actual development of the website I did want a setup that allows me to automate
                     as many steps as possible while being able to test the page behavior also locally 
                     without uploading the site on the backend every time I did a change and want to review it.
-                    Since I am using <strong><a href="https://www.sublimetext.com/">Sublime Text</a></strong> 
+                    Since I am using <a href="https://www.sublimetext.com/">Sublime Text</a> 
                     for all kind of programming tasks, this was my Code editor of choice. It offers all kind
                     of plugins that can help you in the development process of your website like Code-Completion
                     for HTML, PHP and JavaScript.<br>
                     Of course, you should also think about a source code version control system.
                     It gives you the freedom of tracking your progress, reverting changes, testing features on branches
                     and of course as backup. 
-                    Since I already was quite familiar with <strong><a href="https://git-scm.com/">Git</a></strong> I went for it.
-                    As a Git backend server I do have a <strong><a href="https://github.com/">
-                    GitHub</a></strong> Account with private repositories.<br><br>
+                    Since I already was quite familiar with <a href="https://git-scm.com/">Git</a> I went for it.
+                    As a Git backend server I do have a <a href="https://github.com/">
+                    GitHub</a> Account with private repositories.<br><br>
                     But let's get into writing actual code! Before doing that, you should also think about structuring your project
                     in a folder structure. It makes sense to divide different kind of files in different directories. I went for the
                     following structure:
@@ -205,8 +199,8 @@ $ <span class="gr">sudo</span> <span class="bl">certbot</span> --apache
                     Yout might have noticed that <strong>css/</strong> only contains generated CSS code. Since you can only include a <code>.css</code> file
                     rather than directly <code>.sass</code> there has to be a step in between. So first thing to do is to install Sass in order to be able
                     to "compile" the Sass code into normal CSS to actually use it. Installation is described on the official
-                    <strong><a href="http://sass-lang.com/install">Sass</a></strong> site. You do need Ruby and its package manager "gem" to install Sass.
-                    The ruby windows installer can be found <strong><a href="https://rubyinstaller.org/">here</a></strong>.
+                    <a href="http://sass-lang.com/install">Sass</a> site. You do need Ruby and its package manager "gem" to install Sass.
+                    The ruby windows installer can be found <a href="https://rubyinstaller.org/">here</a>.
                     After doing so, you can install Sass through it:
                 </p>
                 <div class="lb is-code">
@@ -241,9 +235,9 @@ $ <span class="gr">sudo</span> <span class="bl">certbot</span> --apache
                     So we do need additional steps after the Sass compiling step to minify our files. Also, there might be even more small
                     tasks we do want to execute automatically every time something is changing. Therefore, it is a good idea to think about
                     kind of a task runner build system. Of course there are a few out there that are specialized for that use case like
-                    <strong><a href="https://gruntjs.com/">Grunt</a></strong> and <strong><a href="https://gulpjs.com/">Gulp</a></strong>.
+                    <a href="https://gruntjs.com/">Grunt</a> and <a href="https://gulpjs.com/">Gulp</a>.
                     They are both based on JavaScript. The installation leads to another point. You will need the JavaScript package manager
-                    <strong><a href="https://www.npmjs.com/">npm</a></strong>. It is great for tracking your plugins and has a huge database
+                    <a href="https://www.npmjs.com/">npm</a>. It is great for tracking your plugins and has a huge database
                     of JavaScript tools. I ended up using Grunt even though I also used Gulp in the past.<br><br>
                     npm can be installed through their website. Afterwards you will be able to execute the <code>npm</code> on your command line.
                     Now we can finally install our task runner of choice: Grunt
@@ -312,10 +306,10 @@ $ <span class="gr">sudo</span> <span class="bl">certbot</span> --apache
                     to create a distribution directory (e.g. <code>dist</code>) that only contains the files that should finally
                     be uploaded to your server. There you can leave anything out that is not needed, like non-minified source files.
                     Here is my current complete Grunt task scheme: 
-                    <strong><a href="/data/Gruntfile.js" target="_blank">Gruntfile.js</a></strong>
+                    <a href="/data/Gruntfile.js" target="_blank">Gruntfile.js</a>
                     <br><br>
                     The next major step would be to test your site. It is definetely advised to setup a local server environemt to
-                    imitate your backend. For windows you have the possibility of installing <strong><a href="http://www.wampserver.com/en/">WAMP</a></strong>.
+                    imitate your backend. For windows you have the possibility of installing <a href="http://www.wampserver.com/en/">WAMP</a>.
                     It is the counterpart to my Linux server and runs locally. It has its "root" at <code>C:\wamp64\www</code>.
                     After installation, you should be able to request a testpage in your browser at <code>127.0.0.1</code> or <code>localhost</code>.
                     All that is left to do is to deploy your "dist" directory to this one. In the course of this, you can also think about the
@@ -342,55 +336,42 @@ $ <span class="gr">sudo</span> <span class="bl">certbot</span> --apache
                     At the backend, the script first cleans out the old content before copying the <code>dist/html</code> directory to it.
                     I am sure one could also integrate those deploy tasks into grunt! So far for the environment. The skeleton for the actual
                     content is there. In the next chapter we will look at a very basic functionality of a site that is still more complicated
-                    that one would think: <strong><a href="/projects/website/navigation.php">Navigation</a></strong>.<br><br>
+                    that one would think: <a href="/projects/website/navigation.php">Navigation</a>.<br><br>
 
                     <strong>Design Decision:</strong> Development tool collection: 
                 </p>
                 <div class="columns has-text-centered">
-                    <div class="column ">
-                        <a href="https://www.sublimetext.com/">
-                            <img src="/img/icon_is_large_sublime.png" alt="Icon::SublimeText" width="42" height="42">
-                        </a>
+                    <a class="column" href="https://www.sublimetext.com/">
+                        <img src="/img/icon_is_large_sublime.png" alt="Icon::SublimeText" width="42" height="42">
                         <p class="title is-4"> <strong> Sublime Text </strong> </p>
                         <p class="subtitle"> Flexible fast editor </p>
-                    </div>
-                    <div class="column">
-                        <a href="https://gruntjs.com/">
-                            <img src="/img/icon_is_large_grunt.png" alt="Icon::Grunt" width="42" height="42">
-                        </a>
+                    </a>
+                    <a class="column" href="https://gruntjs.com/">
+                        <img src="/img/icon_is_large_grunt.png" alt="Icon::Grunt" width="42" height="42">
                         <p class="title is-4"> <strong> Grunt </strong> </p>
                         <p class="subtitle"> A JavaScript based Task-Runner </p>
-                    </div>
-                    <div class="column">
-                        <a href="https://www.npmjs.com/">
-                            <img src="/img/icon_is_large_npm.png" alt="Icon::npm" width="42" height="42">
-                        </a>
+                    <a class="column" href="https://www.npmjs.com/">
+                        <img src="/img/icon_is_large_npm.png" alt="Icon::npm" width="42" height="42">
                         <p class="title is-4"> <strong> npm </strong> </p>
                         <p class="subtitle"> JavaScript package manager </p>
-                    </div>
+                    </a>
                 </div>
                 <div class="columns has-text-centered">
-                    <div class="column ">
-                        <a href="http://sass-lang.com/">
-                            <img src="/img/icon_is_large_sass.png" alt="Icon::Sass" width="56" height="42">
-                        </a>
+                    <a class="column" href="http://sass-lang.com/">
+                        <img src="/img/icon_is_large_sass.png" alt="Icon::Sass" width="56" height="42">
                         <p class="title is-4"> <strong> Sass </strong> </p>
                         <p class="subtitle"> Powerful CSS preprocessor </p>
-                    </div>
-                    <div class="column">
-                        <a href="http://www.wampserver.com/en/">
-                            <img src="/img/icon_is_large_wamp.png" alt="Icon::WAMP" width="42" height="42">
-                        </a>
+                    </a>
+                    <a class="column" href="http://www.wampserver.com/en/">
+                        <img src="/img/icon_is_large_wamp.png" alt="Icon::WAMP" width="42" height="42">
                         <p class="title is-4"> <strong> Wamp </strong> </p>
                         <p class="subtitle"> A local LAMP test environment </p>
-                    </div>
-                    <div class="column">
-                        <a href="https://git-scm.com/">
-                            <img src="/img/icon_is_large_git.png" alt="Icon::Git" width="43" height="42">
-                        </a>
+                    </a>
+                    <a class="column" href="https://git-scm.com/">
+                        <img src="/img/icon_is_large_git.png" alt="Icon::Git" width="43" height="42">
                         <p class="title is-4"> <strong> Git </strong> </p>
                         <p class="subtitle"> Version control at its finest </p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
