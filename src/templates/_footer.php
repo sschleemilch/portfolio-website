@@ -3,8 +3,8 @@
 			<div class="container">
 				<div class="columns has-text-centered">
 					<div class="column is-one-third">
-						<div class="content" id="back_top">
-							<a href="#top">
+						<div class="content"">
+							<a href="#top" id="back_top">
 							<span class="icon is-small">
 	  							<i class="fa fa-angle-up"></i>
 							</span>
