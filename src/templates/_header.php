@@ -30,7 +30,7 @@
 			<div class="container">
 				<div class="navbar-brand">
 					<a class="navbar-item" href="/index.php">
-						<img src="/img/logo_schleemilch_small_milk.png" alt="Schleemilch:Sebastian" width="70" height="28">
+						<img src="/img/logo_schleemilch_small_milk.png" alt="Schleemilch:Sebastian" width="65" height="28">
 					</a>
     				<div class="navbar-burger burger" data-target="navMenuMobile">
     	      			<span></span>
