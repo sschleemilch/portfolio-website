@@ -76,6 +76,10 @@ a.navbar-item,
   &.is-active
     background-color: $navbar-item-hover-background-color
     color: $navbar-item-hover-color
+    .icon
+        transform: rotate(360deg) scale(1.1)
+  .icon
+    transition-duration: 0.5s
 
 .navbar-item
   flex-grow: 0
@@ -256,3 +260,7 @@ a.navbar-item,
     &.is-active
       .navbar-link
         background-color: $navbar-item-hover-background-color
+      .icon
+        transform: rotate(360deg) scale(1.1)
+    .icon
+      transition-duration: 0.5s

@@ -49,7 +49,7 @@
 	    					</span> 
 						</a>
 						<div class="navbar-item has-dropdown is-hoverable">
-	    					<a class="navbar-link <?php if(isset($profile)){echo $profile;}?>" href="/profile/work.php">
+	    					<a class="navbar-link <?php if(isset($profile)){echo $profile;}?> is-info" href="/profile/work.php">
 		    					<span class="icon">
 		  							<i class="fa fa-vcard-o"></i>
 								</span>
@@ -70,7 +70,7 @@
 	    					</div>
 						</div>
 						<div class="navbar-item has-dropdown is-hoverable">
-							<a class="navbar-link <?php if(isset($projects)){echo $projects;} ?>" href="/projects/website/introduction.php"> 
+							<a class="navbar-link <?php if(isset($projects)){echo $projects;} ?> is-danger" href="/projects/website/introduction.php"> 
 		    					<span class="icon">
 		  							<i class="fa fa-rocket"></i>
 								</span>

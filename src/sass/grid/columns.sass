@@ -324,7 +324,9 @@
     &.is-desktop
       display: flex
 
-a.column:hover
-  transform: scale(1.1)
-  p.title
-    text-decoration: underline
+a.column
+  transition: 0.3s
+  &:hover
+    transform: scale(1.1)
+    p.title
+      text-decoration: underline
