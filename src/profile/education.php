@@ -12,14 +12,14 @@
             <h1 class="title">Education</h1>
             <ul class="timeline">
                 <li class="timeline-header">
-                    <span class="tag is-large is-info">03/2016</span>
+                    <span class="tag is-large is-success">03/2016</span>
                 </li>
-	           <li class="timeline-item is-info">
+	           <li class="timeline-item is-success">
                     <div class="timeline-marker is-icon">
                         <i class="fa fa-check"></i>
                     </div>
                     <div class="timeline-content is-100">
-            			<div class="lb is-info is-done">
+            			<div class="lb is-success is-done">
             				<div class="columns">
             					<div class="column is-2">
             						<h1 class="title is-5">2013-2016:</h1>
@@ -38,12 +38,12 @@
                  <li class="timeline-header">
                     <span class="tag is-medium is-dark">2013</span>
                 </li>
-                <li class="timeline-item is-info">
+                <li class="timeline-item is-success">
                     <div class="timeline-marker is-icon">
                         <i class="fa fa-check"></i>
                     </div>
                     <div class="timeline-content is-100">
-                        <div class="lb is-info is-done">
+                        <div class="lb is-success is-done">
                             <div class="columns">
                                 <div class="column is-2">
                                     <h1 class="title is-5">2010-2013:</h1>
@@ -62,12 +62,12 @@
                 <li class="timeline-header">
                     <span class="tag is-medium is-dark">2009 - End of basic school</span>
                 </li>
-                <li class="timeline-item is-info">
+                <li class="timeline-item is-success">
                     <div class="timeline-marker is-icon">
                         <i class="fa fa-check"></i>
                     </div>
                     <div class="timeline-content is-100">
-                        <div class="lb is-info is-done">
+                        <div class="lb is-success is-done">
                             <div class="columns">
                                 <div class="column is-2">
                                     <h1 class="title is-5">2000-2009:</h1>
@@ -84,7 +84,7 @@
                     </div>
                 </li>
                 <li class="timeline-header">
-                    <span class="tag is-large is-info">2000</span>
+                    <span class="tag is-large is-success">2000</span>
                 </li>
             </ul>
         </div>

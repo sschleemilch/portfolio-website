@@ -13,13 +13,13 @@
 			<h1 class="title">Work experience</h1>
             <ul class="timeline">
                 <li class="timeline-header">
-                    <span class="tag is-large is-info">Present</span>
+                    <span class="tag is-large is-success">Present</span>
                 </li>
-                <li class="timeline-item is-info">
+                <li class="timeline-item is-success">
                     <div class="timeline-marker">
                     </div>
                     <div class="timeline-content is-100">
-                        <div class="lb is-info is-active" style="min-width: 200px">
+                        <div class="lb is-primary is-active" style="min-width: 200px">
                             <div class="columns">
                                 <div class="column is-2">
                                     <h1 class="title is-5">06/2016-present:</h1>
@@ -33,7 +33,7 @@
                                 </div>
                             </div>
                             
-                            <button class="button is-info is-outlined" onclick="toggle_details('btn_work_details_bosch','work_details_bosch'); this.blur();" id="btn_work_details_bosch">
+                            <button class="button is-primary is-outlined" onclick="toggle_details('btn_work_details_bosch','work_details_bosch'); this.blur();" id="btn_work_details_bosch">
                               <span>Details</span>
                               <span class="icon is-small">
                                 <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -68,12 +68,12 @@
                 <li class="timeline-header">
                     <span class="tag is-medium is-dark">03/2016 - End of Studies</span>
                 </li>
-                <li class="timeline-item is-info">
+                <li class="timeline-item is-success">
                     <div class="timeline-marker is-icon">
                         <i class="fa fa-check"></i>
                     </div>
                     <div class="timeline-content is-100">
-                        <div class="lb is-info is-done">
+                        <div class="lb is-success is-done">
                             <div class="columns">
                                 <div class="column is-2">
                                     <h1 class="title is-5">10/2014-07/2015:</h1>
@@ -86,7 +86,7 @@
                                     <a href="https://www.bmw-m.com/de/index.html"><img src="/img/logo_bmw.png" alt="Logo:BMW_M_GmbH" width="100" height="100"></a>
                                 </div>
                             </div>
-                            <button class="button is-info is-outlined" onclick="toggle_details('btn_work_details_bmw','work_details_bmw'); this.blur();" id="btn_work_details_bmw">
+                            <button class="button is-success is-outlined" onclick="toggle_details('btn_work_details_bmw','work_details_bmw'); this.blur();" id="btn_work_details_bmw">
                               <span>Details</span>
                               <span class="icon is-small">
                                 <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -112,12 +112,12 @@
                 <li class="timeline-header">
                     <span class="tag is-medium is-dark">2014</span>
                 </li>
-                <li class="timeline-item is-info">
+                <li class="timeline-item is-success">
                     <div class="timeline-marker is-icon">
                         <i class="fa fa-check"></i>
                     </div>
                     <div class="timeline-content is-100">
-                        <div class="lb is-info is-done">
+                        <div class="lb is-success is-done">
                             <div class="columns">
                                 <div class="column is-2">
                                     <h1 class="title is-5">11/2013-09/2014:</h1>
@@ -130,7 +130,7 @@
                                     <a href="https://www.tum.de/"><img src="/img/logo_tum.png" alt="Logo:TUM-University" width="150" height="79"></a>
                                 </div>
                             </div>
-                            <button class="button is-info is-outlined" onclick="toggle_details('btn_work_details_tum','work_details_tum'); this.blur();" id="btn_work_details_tum">
+                            <button class="button is-success is-outlined" onclick="toggle_details('btn_work_details_tum','work_details_tum'); this.blur();" id="btn_work_details_tum">
                               <span>Details</span>
                               <span class="icon is-small">
                                 <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -152,12 +152,12 @@
                         </div>
                     </div>
                 </li>
-                <li class="timeline-item is-info">
+                <li class="timeline-item is-success">
                     <div class="timeline-marker is-icon">
                         <i class="fa fa-check"></i>
                     </div>
                     <div class="timeline-content is-100">
-                        <div class="lb is-info is-done">
+                        <div class="lb is-success is-done">
                             <div class="columns">
                                 <div class="column is-2">
                                     <h1 class="title is-5">05/2013-09/2013:</h1>
@@ -170,7 +170,7 @@
                                     <a href="https://www.iisb.fraunhofer.de/"><img src="/img/logo_fraunhofer_iisb.png" alt="Logo:Fraunehofer_IISB" width="150" height="43"></a>
                                 </div>
                             </div>
-                            <button class="button is-info is-outlined" onclick="toggle_details('btn_work_details_iisb','work_details_iisb'); this.blur();" id="btn_work_details_iisb">
+                            <button class="button is-success is-outlined" onclick="toggle_details('btn_work_details_iisb','work_details_iisb'); this.blur();" id="btn_work_details_iisb">
                               <span>Details</span>
                               <span class="icon is-small">
                                 <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -197,12 +197,12 @@
                 <li class="timeline-header">
                     <span class="tag is-medium is-dark">2013</span>
                 </li>
-                <li class="timeline-item is-info">
+                <li class="timeline-item is-success">
                     <div class="timeline-marker is-icon">
                         <i class="fa fa-check"></i>
                     </div>
                     <div class="timeline-content is-100">
-                        <div class="lb is-info is-done">
+                        <div class="lb is-success is-done">
                             <div class="columns">
                                 <div class="column is-2">
                                     <h1 class="title is-5">10/2012-04/2013:</h1>
@@ -215,7 +215,7 @@
                                     <a href="https://www.iis.fraunhofer.de/"><img src="/img/logo_fraunhofer_iis.png" alt="Logo:Fraunehofer_IIS" width="150" height="41"></a>
                                 </div>
                             </div>
-                            <button class="button is-info is-outlined" onclick="toggle_details('btn_work_details_iis','work_details_iis'); this.blur();" id="btn_work_details_iis">
+                            <button class="button is-success is-outlined" onclick="toggle_details('btn_work_details_iis','work_details_iis'); this.blur();" id="btn_work_details_iis">
                               <span>Details</span>
                               <span class="icon is-small">
                                 <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -239,12 +239,12 @@
                 <li class="timeline-header">
                     <span class="tag is-medium is-dark">2012</span>
                 </li>
-                <li class="timeline-item is-info">
+                <li class="timeline-item is-success">
                     <div class="timeline-marker is-icon">
                         <i class="fa fa-check"></i>
                     </div>
                     <div class="timeline-content is-100">
-                        <div class="lb is-info is-done">
+                        <div class="lb is-success is-done">
                             <div class="columns">
                                 <div class="column is-2">
                                     <h1 class="title is-5">10/2011-10/2012:</h1>
@@ -257,7 +257,7 @@
                                     <a href="https://www.fau.de/"><img src="/img/logo_fau_blue.png" alt="Logo:FAU-University" width="150" height="64"></a>
                                 </div>
                             </div>
-                            <button class="button is-info is-outlined" onclick="toggle_details('btn_work_details_fau','work_details_fau'); this.blur();" id="btn_work_details_fau">
+                            <button class="button is-success is-outlined" onclick="toggle_details('btn_work_details_fau','work_details_fau'); this.blur();" id="btn_work_details_fau">
                               <span>Details</span>
                               <span class="icon is-small">
                                 <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -279,7 +279,7 @@
                     </div>
                 </li>
                  <li class="timeline-header">
-                    <span class="tag is-large is-info">2011</span>
+                    <span class="tag is-large is-success">2011</span>
                 </li>
             </ul>
 		</div>

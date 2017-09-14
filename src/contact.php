@@ -117,7 +117,7 @@
 	}
 ?>
 
-<section class="hero is-primary is-medium">
+<section class="hero is-warning is-medium">
 	<div class="hero-body">
 		<div class="container has-text-centered">
 			<h1 class="title"><span class="icon is-huge"><i class="fa fa-envelope-open-o"></i></span></h1>
@@ -163,7 +163,7 @@
 		<div class="content">
 			<div class="columns is-centered">
 				<div class="column is-8">
-					<h1 class="title has-text-centered" name="mail_form"><span class="icon is-large"><i class="fa fa-envelope-o"></i></span> <strong>Mail</strong> Form </h1>
+					<h1 class="title has-text-centered" name="mail_form"><span class="icon is-large"><i class="fa fa-pencil-square-o"></i></span> <strong>Mail</strong> Form </h1>
 				</div>
 			</div>
 			<div class="columns is-centered">
@@ -197,7 +197,7 @@
 						  	<div class="control has-icons-left has-icons-right">
 						    	<input class="input <?php echo $emailIsState?>" type="text" name="email" placeholder="Your Email Address" value="<?php echo $email?>">
 						    	<span class="icon is-small is-left">
-						      		<i class="fa fa-envelope"></i>
+						      		<i class="fa fa-address-book"></i>
 						    	</span>
 						    	<?php 
 						    		if($emailHasErr){
@@ -237,7 +237,12 @@
 						</div>
 						<div class="field is-grouped">
 							<div class="control">
-								<button class="button is-primary" type="submit" value="Send" form="mail_form">Send</button>
+								<button class="button is-warning" type="submit" value="Send" form="mail_form">
+                                <span>Send</span>
+                                <span class="icon is-small">
+                                    <i class="fa fa-send-o"></i>
+                                </span>
+                                </button>
 							</div>
 						</div>
 					</form>

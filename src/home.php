@@ -26,12 +26,12 @@
 					<br>
 					<div class="columns">
 						<a class="column" href="/profile/education.php">
-							<span class="icon is-large" style="color: #3273DC"><i class="fa fa-user"></i></span>
+							<span class="icon is-large" style="color: #52946b"><i class="fa fa-user"></i></span>
 							<p class="title is-4"> <strong> Portfolio </strong> </p>
 							<p class="subtitle"> My past and present </p>
 						</a>
 						<a class="column" href="/projects/website/introduction.php">
-							<span class="icon is-large" style="color: #F74040"><i class="fa fa-rocket"></i></span>
+							<span class="icon is-large" style="color: #dd6137"><i class="fa fa-rocket"></i></span>
 							<p class="title is-4"> <strong> Projects </strong> </p>
 							<p class="subtitle">Current private projects</p>
 						</a>

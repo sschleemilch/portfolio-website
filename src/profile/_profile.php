@@ -1,4 +1,4 @@
-<section class="hero is-info is-medium">
+<section class="hero is-success is-medium">
 	<div class="hero-body">
 		<div class="container has-text-centered">
 			<img src="/img/profile.png" alt="Schleemilch_Sebastian_Picture" width="200" height="200">

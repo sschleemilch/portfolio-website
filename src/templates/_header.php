@@ -30,7 +30,7 @@
 			<div class="container">
 				<div class="navbar-brand">
 					<a class="navbar-item" href="/index.php">
-						<img src="/img/logo_schleemilch_small_milk.png" alt="Schleemilch:Sebastian" width="65" height="28">
+						<img src="/img/logo_schleemilch_small_milk.png" alt="Schleemilch:Sebastian" width="67" height="28">
 					</a>
     				<div class="navbar-burger burger" data-target="navMenuMobile">
     	      			<span></span>
@@ -95,7 +95,7 @@
 	    			</div>	
 	    			<div class="navbar-end">
 	    				<div class="navbar-item <?php if(isset($contact)){echo $contact;} ?>">
-	    					<a href="/contact.php" class="button is-primary is-outlined" <?php if(isset($contact_disabled)){echo $contact_disabled;} ?>>
+	    					<a href="/contact.php" class="button is-warning is-outlined" <?php if(isset($contact_disabled)){echo $contact_disabled;} ?>>
 	    						<span class="icon">
 	  								<i class="fa fa-envelope-o"></i>
 								</span>
