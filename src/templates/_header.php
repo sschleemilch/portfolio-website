@@ -40,7 +40,7 @@
                 </div>
 	    		<div class="navbar-menu" id="navMenuMobile">
 	    			<div class="navbar-start">
-	    				<a href="/home.php" class="navbar-item <?php if(isset($home)){echo $home;} ?>"> 
+	    				<a href="/home.php" class="navbar-item <?php if(isset($home)){echo $home;} ?> is-primary"> 
 	    					<span class="icon">
 	  							<i class="fa fa-home"></i>
 							</span>
@@ -49,7 +49,7 @@
 	    					</span> 
 						</a>
 						<div class="navbar-item has-dropdown is-hoverable">
-	    					<a class="navbar-link <?php if(isset($profile)){echo $profile;}?> is-info" href="/profile/work.php">
+	    					<a class="navbar-link <?php if(isset($profile)){echo $profile;}?> is-success" href="/profile/work.php">
 		    					<span class="icon">
 		  							<i class="fa fa-vcard-o"></i>
 								</span>
@@ -57,7 +57,7 @@
 		    						&nbsp;Profile
 		    					</span>
 	    					</a>
-	    					<div class="navbar-dropdown">
+	    					<div class="navbar-dropdown is-success">
 	    						<a href="/profile/education.php" class="navbar-item <?php if(isset($profile_education)){echo $profile_education;}?>">
 	    							Education
 	    						</a>
@@ -78,13 +78,13 @@
 		    						&nbsp;Projects
 		    					</span> 
 							</a>
-							<div class="navbar-dropdown">
+							<div class="navbar-dropdown is-danger">
 								<a href="/projects/website/introduction.php" class="navbar-item <?php if(isset($projects_website)){echo $projects_website;}?>">
 	    							Website
 	    						</a>
 							</div>
 						</div>
-						<a href="/tools.php" class="navbar-item <?php if(isset($tools)){echo $tools;} ?>"> 
+						<a href="/tools.php" class="navbar-item <?php if(isset($tools)){echo $tools;} ?> is-warning"> 
 	    					<span class="icon">
 	  							<i class="fa fa-wrench"></i>
 							</span>

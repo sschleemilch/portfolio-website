@@ -19,7 +19,7 @@ $navbar-tab-active-border-bottom-width: 3px !default
 $navbar-dropdown-background-color: $white !default
 $navbar-dropdown-border-top: 1px solid $border !default
 $navbar-dropdown-offset: -4px !default
-$navbar-dropdown-arrow: $link !default
+$navbar-dropdown-arrow: $grey !default
 $navbar-dropdown-radius: $radius-large !default
 $navbar-dropdown-z: 20 !default
 
@@ -78,6 +78,11 @@ a.navbar-item,
     color: $navbar-item-hover-color
     .icon
         transform: rotate(360deg) scale(1.1)
+    @each $name, $pair in $colors
+      $color: nth($pair, 1)
+      &.is-#{$name}
+        .icon
+          color: $color
   .icon
     transition-duration: 0.3s
 
@@ -102,7 +107,6 @@ a.navbar-item,
       border-bottom-width: $navbar-tab-active-border-bottom-width
       color: $navbar-tab-active-color
       padding-bottom: calc(0.5rem - #{$navbar-tab-active-border-bottom-width})
-    &.is-red
     @each $name, $pair in $colors
         $color: nth($pair, 1)
         $color-invert: nth($pair, 2)
@@ -200,6 +204,14 @@ a.navbar-item,
       margin-top: -0.375em
       right: 1.125em
       top: 50%
+    @each $name, $pair in $colors
+      $color: nth($pair, 1)
+      $color-invert: nth($pair, 2)
+      &:hover,
+      &.is-active,
+        &.is-#{$name}
+          &:after
+            border-color: $color
   .navbar-menu
     flex-grow: 1
     flex-shrink: 0
@@ -233,6 +245,16 @@ a.navbar-item,
       &.is-active
         background-color: $navbar-dropdown-item-active-background-color
         color: $navbar-dropdown-item-active-color
+    @each $name, $pair in $colors
+      $color: nth($pair, 1)
+      $color-invert: nth($pair, 2)
+      &.is-#{$name}
+        a.navbar-item
+          &:hover
+            color: $color
+          &.is-active
+            color: $color
+ 
     &.is-boxed
       border-radius: $navbar-dropdown-boxed-radius
       border-top: none

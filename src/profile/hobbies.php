@@ -14,17 +14,17 @@
 			<div class="lb is-success is-fun has-text-centered">
 				<div class="columns">
 					<div class="column is-one-third">
-						<span class="icon is-large" style="color: #FF3860"><i class="fa fa-heartbeat"></i></span>
+						<span class="icon is-large has-text-danger"><i class="fa fa-heartbeat"></i></span>
 						<p class="title is-4"> <strong> Sport </strong> </p>
 						<p class="subtitle"> Tennis, Fitness, Climbing </p>
 					</div>
 					<div class="column is-one-third">
-						<span class="icon is-large" style="color: #23D160"><i class="fa fa-music"></i></span>
+						<span class="icon is-large has-text-primary"><i class="fa fa-music"></i></span>
 						<p class="title is-4"> <strong> Music </strong> </p>
 						<p class="subtitle"> E-Guitar, Western-Guitar </p>
 					</div>
 					<div class="column is-one-third">
-						<span class="icon is-large" style="color: #FF470F"><i class="fa fa-code"></i></span>
+						<span class="icon is-large has-text-warning"><i class="fa fa-code"></i></span>
 						<p class="title is-4"> <strong> Programming </strong> </p>
 						<p class="subtitle"> Web, Microcontroller, Raspberry PI, AI </p>
 					</div>

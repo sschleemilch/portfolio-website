@@ -37,21 +37,21 @@
 					For sure, nearly everyone of you will know the base technologies:
 				</p>
 				<div class="columns has-text-centered">
-					<div class="column">
+					<a class="column" href="https://www.w3schools.com/html/html5_intro.asp">
 						<span class="icon is-large" style="color: #3273DC"><i class="fa fa-html5"></i></span>
 						<p class="title is-4"> <strong> HTML(5) </strong> </p>
 						<p class="subtitle"> Your choice when creating content </p>
-					</div>
-					<div class="column">
+					</a>
+					<a class="column" href="https://www.w3schools.com/css/">
 						<span class="icon is-large" style="color: #FF470F"><i class="fa fa-css3"></i></span>
 						<p class="title is-4"> <strong> CSS(3) </strong> </p>
 						<p class="subtitle"> Eye-candy for your webpage </p>
-					</div>
-					<div class="column">
+					</a>
+					<a class="column" href="https://www.javascript.com/">
 						<img src="/img/icon_is_large_javascript.png" alt="Icon::Javascript" width="37" height="42">
 						<p class="title is-4"> <strong> JavaScript </strong> </p>
 						<p class="subtitle"> Client side dynamic behavior </p>
-					</div>
+					</a>
 				</div>
 				<p>
 					For HTML and CSS there is and should be no alternative and they are the fundament of every web page
