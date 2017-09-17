@@ -9,7 +9,7 @@
 
 <section class="hero">
 	<div class="hero-body">
-		<div class="container">
+		<div class="container is-success">
 			<h1 class="title">Work experience</h1>
             <ul class="timeline">
                 <li class="timeline-header">
@@ -19,7 +19,7 @@
                     <div class="timeline-marker">
                     </div>
                     <div class="timeline-content is-100">
-                        <div class="lb is-primary is-active" style="min-width: 200px">
+                        <div class="lb is-success is-active" style="min-width: 200px">
                             <div class="columns">
                                 <div class="column is-2">
                                     <h1 class="title is-5">06/2016-present:</h1>
@@ -33,7 +33,7 @@
                                 </div>
                             </div>
                             
-                            <button class="button is-primary is-outlined" onclick="toggle_details('btn_work_details_bosch','work_details_bosch'); this.blur();" id="btn_work_details_bosch">
+                            <button class="button is-success is-outlined" onclick="toggle_details('btn_work_details_bosch','work_details_bosch'); this.blur();" id="btn_work_details_bosch">
                               <span>Details</span>
                               <span class="icon is-small">
                                 <i class="fa fa-angle-down" aria-hidden="true"></i>

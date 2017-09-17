@@ -8,7 +8,7 @@
 ?>
 <section class="hero">
 	<div class="hero-body">
-		<div class="container">
+		<div class="container is-success">
             <h1 class="title">Education</h1>
             <ul class="timeline">
                 <li class="timeline-header">

@@ -25,3 +25,12 @@ $container-offset: 60px !default
   +from($fullhd + $container-offset)
     max-width: $fullhd - (2 * $gap)
     width: $fullhd - (2 * $gap)
+
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    $color-invert: nth($pair, 2)
+    &.is-#{$name}
+      a
+        color: $color
+        &:hover
+          color: $link-hover

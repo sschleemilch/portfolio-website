@@ -10,7 +10,7 @@
 ?>
 
 <div class="section">
-	<div class="container is-fullhd">
+	<div class="container is-fullhd is-danger">
 		<h1 class="title"><strong>Navigation</strong></h1>
 		<h2 class="subtitle">No duplicated code, No JavaScript</h2>
 		<div class="content">

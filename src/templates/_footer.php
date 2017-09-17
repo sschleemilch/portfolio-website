@@ -1,5 +1,21 @@
 		<hr class="is-marginless">
-		<footer class="footer">
+		<footer class="footer 
+        <?php
+            $activeColor = "";
+            if(isset($home)){
+                $activeColor = "is-primary";
+            } elseif (isset($profile)) {
+                $activeColor = "is-success";
+            } elseif (isset($projects)) {
+                $activeColor = "is-danger";
+            } elseif (isset($tools)) {
+                $activeColor = "is-warning";
+            } elseif (isset($contact)) {
+                $activeColor = "is-warning";
+            }
+            echo " " . $activeColor;
+        ?>
+        ">
 			<div class="container">
 				<div class="columns has-text-centered">
 					<div class="column is-one-third">
@@ -41,7 +57,7 @@
 								<span class="icon is-medium" style="color: #0e76a8;"><i class="fa fa-linkedin-square"></i>
 								</span>
 							</a><br>
-                            <p><small>Visitors today:</small> <small class="has-text-primary">
+                            <p><small>Visitors today:
                             <?php
                                 $root = $_SERVER['DOCUMENT_ROOT'];
                                 $path = $root . "/php/visitors.php";

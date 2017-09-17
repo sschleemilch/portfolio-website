@@ -11,7 +11,7 @@
 
 <div class="hero">
 	<div class="hero-body">
-		<div class="container">
+		<div class="container is-danger">
 			<h1 class="title"><strong>Environment Setup</strong></h1>
 			<h2 class="subtitle">How I did setup my backend and development environment</h2>
 		</div>
@@ -164,7 +164,7 @@ $ <span class="gr">sudo</span> <span class="bl">certbot</span> --apache
 
 <div class="hero">
     <div class="hero-body">
-        <div class="container">
+        <div class="container is-danger">
             <h1 class="title">Frontend Environment</h1>
             <h2 class="subtitle"> Sublime Text, Grunt, npm, Sass, wamp, Git</h2>
             <div class="content">

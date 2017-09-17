@@ -10,7 +10,7 @@
 ?>
 
 <div class="section">
-	<div class="container">
+	<div class="container is-danger">
 		<h1 class="title"><strong>(Web)-Technologies</strong></h1>
 		<h2 class="subtitle">What technologies I did choose and why</h2>
 		<div class="content">
@@ -28,7 +28,7 @@
 </div>
 <div class="hero is-dark">
 	<div class="hero-body">
-		<div class="container">
+		<div class="container is-danger">
 			<h1 class="title">Frontend technologies</h1>
 			<div class="content">
 				<p>
@@ -149,7 +149,7 @@
 </div>
 <div class="hero">
 	<div class="hero-body">
-		<div class="container">
+		<div class="container is-danger">
 			<h1 class="title">Backend technologies</h1>
 			<div class="content">
 				<p>
