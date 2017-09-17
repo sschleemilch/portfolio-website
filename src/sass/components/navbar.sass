@@ -131,6 +131,15 @@ a.navbar-item,
   .navbar-item
     padding-left: 1.5rem
     padding-right: 1.5rem
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    $color-invert: nth($pair, 2)
+    &.is-#{$name}
+      a.navbar-item
+        &:hover
+          color: $color
+        &.is-active
+          color: $color
 
 .navbar-divider
   background-color: $navbar-divider-background-color
@@ -245,16 +254,7 @@ a.navbar-item,
       &.is-active
         background-color: $navbar-dropdown-item-active-background-color
         color: $navbar-dropdown-item-active-color
-    @each $name, $pair in $colors
-      $color: nth($pair, 1)
-      $color-invert: nth($pair, 2)
-      &.is-#{$name}
-        a.navbar-item
-          &:hover
-            color: $color
-          &.is-active
-            color: $color
- 
+    
     &.is-boxed
       border-radius: $navbar-dropdown-boxed-radius
       border-top: none

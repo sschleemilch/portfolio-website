@@ -19,7 +19,7 @@
 </div>
 <div class="hero is-dark">
 	<div class="hero-body">
-		<div class="container">
+		<div class="container is-danger">
 			<h1 class="title">Backend Environment</h1>
             <h2 class="subtitle">Linux, Apache, PHP, SSL</h2>
 			<div class="content">
