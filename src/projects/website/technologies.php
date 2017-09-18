@@ -38,12 +38,12 @@
 				</p>
 				<div class="columns has-text-centered">
 					<a class="column" href="https://www.w3schools.com/html/html5_intro.asp">
-						<span class="icon is-large" style="color: #3273DC"><i class="fa fa-html5"></i></span>
+						<span class="icon is-large has-text-info"><i class="fa fa-html5"></i></span>
 						<p class="title is-4"> <strong> HTML(5) </strong> </p>
 						<p class="subtitle"> Your choice when creating content </p>
 					</a>
 					<a class="column" href="https://www.w3schools.com/css/">
-						<span class="icon is-large" style="color: #FF470F"><i class="fa fa-css3"></i></span>
+						<span class="icon is-large has-text-danger"><i class="fa fa-css3"></i></span>
 						<p class="title is-4"> <strong> CSS(3) </strong> </p>
 						<p class="subtitle"> Eye-candy for your webpage </p>
 					</a>
