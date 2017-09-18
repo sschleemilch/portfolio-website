@@ -28,27 +28,43 @@
 	<body>
 		<navbar class="navbar" name="top">
 			<div class="container">
-				<div class="navbar-brand">
-					<a class="navbar-item" href="/index.php">
-                        <?php
-                            $postfix = "";
-                            $base = "/img/logo_schleemilch_small_milk";
+				<div class="navbar-brand 
+                    <?php
+                            $returnVal = "";
                             if(isset($home)){
-                                $postfix = "home";
+                                $returnVal = "is-info";
                             } elseif (isset($profile)) {
-                                $postfix = "profile";
+                                $returnVal = "is-success";
                             } elseif (isset($projects)) {
-                                $postfix = "projects";
+                                $returnVal = "is-danger";
                             } elseif (isset($tools)) {
-                                $postfix = "tools";
+                                $returnVal = "is-warning";
                             } elseif (isset($contact)) {
-                                $postfix = "contact";
+                                $returnVal = "is-warning";
                             }
-                            $complete_path = $base . "_" . $postfix . ".png";
-                            echo "<img src=\"" . $complete_path . "\" alt=\"Schleemilch:Sebastian\" width=\"65\" height=\"28\">";
-                        ?>
+                            echo $returnVal
+                    ?>
+                ">
+					<a class="navbar-item" href="/index.php">
+                        <img src="/img/logo_schleemilch_small.png" alt="Schleemilch:Sebastian" width="134" height="28">
 					</a>
-    				<div class="navbar-burger burger" data-target="navMenuMobile">
+    				<div class="navbar-burger burger
+                    <?php
+                            $returnVal = "";
+                            if(isset($home)){
+                                $returnVal = "is-info";
+                            } elseif (isset($profile)) {
+                                $returnVal = "is-success";
+                            } elseif (isset($projects)) {
+                                $returnVal = "is-danger";
+                            } elseif (isset($tools)) {
+                                $returnVal = "is-warning";
+                            } elseif (isset($contact)) {
+                                $returnVal = "is-warning";
+                            }
+                            echo $returnVal
+                    ?>
+                    " data-target="navMenuMobile">
     	      			<span></span>
     	      			<span></span>
     	      			<span></span>

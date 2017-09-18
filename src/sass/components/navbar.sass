@@ -54,10 +54,22 @@ $navbar-divider-background-color: $border !default
   min-height: $navbar-height
   overflow-x: auto
   overflow-y: hidden
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    &.is-#{$name}
+      background-color: $color
+      .navbar-item
+        &:hover
+          background-color: darken($color, 5%)
 
 .navbar-burger
   +hamburger($navbar-height)
   margin-left: auto
+  @each $name, $pair in $colors
+    $color: nth($pair, 1)
+    &.is-#{$name}
+      &:hover
+        background-color: darken($color, 5%)
 
 .navbar-menu
   display: none
