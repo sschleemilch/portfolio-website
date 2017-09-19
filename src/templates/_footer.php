@@ -56,23 +56,41 @@
 							<a href="https://www.linkedin.com/in/sschleemilch/">
 								<span class="icon is-medium" style="color: #0e76a8;"><i class="fa fa-linkedin-square"></i>
 								</span>
-							</a><br>
-                            <p><small>Visitors today:
-                            <?php
-                                $root = $_SERVER['DOCUMENT_ROOT'];
-                                $path = $root . "/php/visitors.php";
-                                include($path);
-                            ?></small>
-                            <small> (</small><small class="has-text-grey"><?php
-                                $root = $_SERVER['DOCUMENT_ROOT'];
-                                $path = $root . "/php/hits.php";
-                                include($path);
-                            ?></small><small> hits)
-                            </small>
-                            </p>
+							</a>
 						</div>
 					</div>
 				</div>
+                <div class="tags has-addons" style="display:block;text-align: center;">
+                                <span class="tag is-dark">
+                                    Visitors today:
+                                </span><span class="tag
+                                    <?php
+                                        $activeColor = "";
+                                        if(isset($home)){
+                                            $activeColor = "is-primary";
+                                        } elseif (isset($profile)) {
+                                            $activeColor = "is-success";
+                                        } elseif (isset($projects)) {
+                                            $activeColor = "is-danger";
+                                        } elseif (isset($tools)) {
+                                            $activeColor = "is-warning";
+                                        } elseif (isset($contact)) {
+                                            $activeColor = "is-warning";
+                                        }
+                                        echo " " . $activeColor;
+                                    ?>">
+                                    <?php
+                                    $root = $_SERVER['DOCUMENT_ROOT'];
+                                    $path = $root . "/php/visitors.php";
+                                    include($path);
+                                    ?>
+                                    (<?php
+                                        $root = $_SERVER['DOCUMENT_ROOT'];
+                                        $path = $root . "/php/hits.php";
+                                        include($path);
+                                    ?> hits)
+                                </span>
+                            </div>
 			</div>
 		</footer>
 	</body>
