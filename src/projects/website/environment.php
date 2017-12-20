@@ -7,6 +7,8 @@
 	include_once($path);
 	$path = $root . "/projects/_projects.php";
 	include_once($path);
+    $path = $root . "/projects/website/_website.php";
+    include_once($path);
 ?>
 
 <div class="hero">

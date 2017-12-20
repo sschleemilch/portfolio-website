@@ -114,6 +114,9 @@
 								<a href="/projects/website/introduction.php" class="navbar-item <?php if(isset($projects_website)){echo $projects_website;}?>">
 	    							Website
 	    						</a>
+                                <a href="/projects/gitbash/introduction.php" class="navbar-item <?php if(isset($projects_gitbash)){echo $projects_gitbash;}?>">
+                                    Git Powerline
+                                </a>
 							</div>
 						</div>
 						<a href="/tools.php" class="navbar-item <?php if(isset($tools)){echo $tools;} ?> is-warning"> 
