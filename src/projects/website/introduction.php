@@ -12,7 +12,7 @@
 ?>
 
 <div class="section">
-	<div class="container is-fullhd is-danger">
+	<div class="container is-danger">
 		<h1 class="title"><strong>About</strong></h1>
 		<h2 class="subtitle">What this project is about</h2>
 		<div class="content">

@@ -12,7 +12,7 @@
 ?>
 
 <div class="section">
-	<div class="container is-danger">
+	<div class="container is-fullhd is-danger">
 		<h1 class="title"><strong>About</strong></h1>
 		<h2 class="subtitle">What this project is about</h2>
 		<div class="content">
@@ -50,19 +50,10 @@
             </div>
             <p>
                 This preview only shows a small part of the features that are currently implemented.
+                In the following sections you can read about how I got there.
             </p>
 		</div>
 	</div>
-</div>
-<div class="hero is-dark">
-    <div class="hero-body">
-        <div class="container is-danger">
-            <h1 class="title">Manipulating the Git Bash Prompt</h1>
-            <h2 class="subtitle">.bashrc, .minttyrc, C#</h2>
-            <div class="content">
-            </div>
-        </div>
-    </div>
 </div>
 
 <?php
