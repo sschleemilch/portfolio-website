@@ -13,6 +13,16 @@
 
 <div class="section">
 	<div class="container is-danger">
+        <div class="content has-text-centered">
+            <a class="button is-danger is-outlined" href="https://github.com/sschleemilch/gitbash-powerline">
+                        <span class="icon">
+                            <i class="fa fa-github"></i>
+                        </span>
+                        <span>
+                            View sources on GitHub
+                        </span>
+            </a>
+        </div>
 		<h1 class="title"><strong>About</strong></h1>
 		<h2 class="subtitle">What this project is about</h2>
 		<div class="content">

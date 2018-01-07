@@ -15,9 +15,43 @@
 </section>
 
 <section class="section">
-	<div class="container has-text-centered">
-		<span class="icon is-huge"><i class="fa fa-cogs"></i></span>
-		<h1 class="title">Under Construction</h1>
+	<div class="container">
+        <div class="lb is-warning is-tool">
+            <article class="media">
+              <figure class="media-left">
+                <p class="image is-64x64">
+                  <img src="/img/git_128x128.png">
+                </p>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>Git Bash Powerline</strong> <small>2017</small>
+                    <br>
+                    A Git Bash Powerline extension using C# to extract mostly Git relevant
+                    information out of the current working directory
+                  </p>
+                </div>
+                <nav class="level is-mobile">
+                  <div class="level-left">
+                    <span class="tag is-warning">C#</span>
+                    <span class="tag is-warning">Git</span>
+                    <span class="tag is-warning">Bash</span>
+                  </div>
+                </nav>
+              </div>
+              <div class="media-right">
+                <a class="button is-warning is-outlined" href="https://github.com/sschleemilch/gitbash-powerline">
+                    <span class="icon">
+                        <i class="fa fa-github"></i>
+                    </span>
+                    <span>
+                        GitHub
+                    </span>
+                </a>
+              </div>
+            </article>
+        </div>
 	</div>
 </section>
 
