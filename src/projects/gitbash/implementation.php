@@ -192,6 +192,9 @@
 </pre>
             </div>
         </div>
+        That's it for now. In the last <a href="/projects/gitbash/showcase.php">section</a> of this project you can see some of the visual representations of the
+        discussed information and therefore the final look and feel.
+        <br><br>
 </div>
 
 <?php

@@ -102,7 +102,7 @@
 	    					</div>
 						</div>
 						<div class="navbar-item has-dropdown is-hoverable">
-							<a class="navbar-link <?php if(isset($projects)){echo $projects;} ?> is-danger" href="/projects/website/introduction.php"> 
+							<a class="navbar-link <?php if(isset($projects)){echo $projects;} ?> is-danger" href="/projects/overview.php"> 
 		    					<span class="icon">
 		  							<i class="fa fa-rocket"></i>
 								</span>

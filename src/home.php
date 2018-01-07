@@ -30,7 +30,7 @@
 							<p class="title is-4"> <strong> Portfolio </strong> </p>
 							<p class="subtitle"> My past and present </p>
 						</a>
-						<a class="column" href="/projects/website/introduction.php">
+						<a class="column" href="/projects/overview.php">
 							<span class="icon is-large has-text-danger"><i class="fa fa-rocket"></i></span>
 							<p class="title is-4"> <strong> Projects </strong> </p>
 							<p class="subtitle">Current private projects</p>

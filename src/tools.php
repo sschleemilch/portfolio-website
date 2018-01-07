@@ -52,6 +52,39 @@
               </div>
             </article>
         </div>
+        <div class="lb is-warning is-lib">
+            <article class="media">
+              <figure class="media-left">
+                <p class="image is-64x64">
+                  <img src="/img/python_128x128.png">
+                </p>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>Bapy</strong> <small>2017/18</small>
+                    <br>
+                    A personal Python library to help building visually appealing and effective Python scripts. 
+                  </p>
+                </div>
+                <nav class="level is-mobile">
+                  <div class="level-left">
+                    <span class="tag is-warning">Python</span>
+                  </div>
+                </nav>
+              </div>
+              <div class="media-right">
+                <a class="button is-warning is-outlined" href="https://github.com/sschleemilch/bapy">
+                    <span class="icon">
+                        <i class="fa fa-github"></i>
+                    </span>
+                    <span>
+                        GitHub
+                    </span>
+                </a>
+              </div>
+            </article>
+        </div>
 	</div>
 </section>
 

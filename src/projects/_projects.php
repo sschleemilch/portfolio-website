@@ -9,6 +9,16 @@
 		<div class="container">
 			<nav class="tabs is-boxed">
 				<ul>
+                    <li class="<?php if(isset($projects_overview)){echo $projects_overview;} ?>">
+                        <a href="/projects/overview.php">
+                            <span class="icon is-small">
+                                <i class="fa fa-list"></i>
+                            </span>
+                            <span>
+                                Overview
+                            </span>
+                        </a>
+                    </li>
 					<li class="<?php if(isset($projects_website)){echo $projects_website;} ?>">
 						<a href="/projects/website/introduction.php">
                             <span class="icon is-small">
