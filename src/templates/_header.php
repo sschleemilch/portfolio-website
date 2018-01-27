@@ -38,7 +38,7 @@
                             } elseif (isset($projects)) {
                                 $returnVal = "is-danger";
                             } elseif (isset($tools)) {
-                                $returnVal = "is-warning";
+                                $returnVal = "is-dark";
                             } elseif (isset($contact)) {
                                 $returnVal = "is-warning";
                             }
@@ -58,7 +58,7 @@
                             } elseif (isset($projects)) {
                                 $returnVal = "is-danger";
                             } elseif (isset($tools)) {
-                                $returnVal = "is-warning";
+                                $returnVal = "is-dark";
                             } elseif (isset($contact)) {
                                 $returnVal = "is-warning";
                             }
@@ -119,7 +119,7 @@
                                 </a>
 							</div>
 						</div>
-						<a href="/tools.php" class="navbar-item <?php if(isset($tools)){echo $tools;} ?> is-warning"> 
+						<a href="/tools.php" class="navbar-item <?php if(isset($tools)){echo $tools;} ?> is-dark"> 
 	    					<span class="icon">
 	  							<i class="fa fa-wrench"></i>
 							</span>

@@ -5,7 +5,7 @@
 	include_once($path)
 ?>
 
-<section class="hero is-warning is-medium">
+<section class="hero is-dark is-medium">
     <div class="hero-body">
         <div class="container has-text-centered">
             <h1 class="title"><span class="icon is-huge"><i class="fa fa-wrench"></i></span></h1>
@@ -16,7 +16,7 @@
 
 <section class="section">
 	<div class="container">
-        <div class="lb is-warning is-tool">
+        <div class="lb is-dark is-tool">
             <article class="media">
               <figure class="media-left">
                 <p class="image is-64x64">
@@ -34,14 +34,14 @@
                 </div>
                 <nav class="level is-mobile">
                   <div class="level-left">
-                    <span class="tag is-warning">C#</span>
-                    <span class="tag is-warning">Git</span>
-                    <span class="tag is-warning">Bash</span>
+                    <span class="tag is-dark">C#</span>
+                    <span class="tag is-dark">Git</span>
+                    <span class="tag is-dark">Bash</span>
                   </div>
                 </nav>
               </div>
               <div class="media-right">
-                <a class="button is-warning is-outlined" href="https://github.com/sschleemilch/gitbash-powerline">
+                <a class="button is-dark is-outlined" href="https://github.com/sschleemilch/gitbash-powerline">
                     <span class="icon">
                         <i class="fa fa-github"></i>
                     </span>
@@ -52,7 +52,7 @@
               </div>
             </article>
         </div>
-        <div class="lb is-warning is-lib">
+        <div class="lb is-dark is-lib">
             <article class="media">
               <figure class="media-left">
                 <p class="image is-64x64">
@@ -69,12 +69,12 @@
                 </div>
                 <nav class="level is-mobile">
                   <div class="level-left">
-                    <span class="tag is-warning">Python</span>
+                    <span class="tag is-dark">Python</span>
                   </div>
                 </nav>
               </div>
               <div class="media-right">
-                <a class="button is-warning is-outlined" href="https://github.com/sschleemilch/bapy">
+                <a class="button is-dark is-outlined" href="https://github.com/sschleemilch/bapy">
                     <span class="icon">
                         <i class="fa fa-github"></i>
                     </span>

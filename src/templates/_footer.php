@@ -9,7 +9,7 @@
             } elseif (isset($projects)) {
                 $activeColor = "is-danger";
             } elseif (isset($tools)) {
-                $activeColor = "is-warning";
+                $activeColor = "is-dark";
             } elseif (isset($contact)) {
                 $activeColor = "is-warning";
             }
@@ -73,7 +73,7 @@
                                         } elseif (isset($projects)) {
                                             $activeColor = "is-danger";
                                         } elseif (isset($tools)) {
-                                            $activeColor = "is-warning";
+                                            $activeColor = "is-dark";
                                         } elseif (isset($contact)) {
                                             $activeColor = "is-warning";
                                         }
