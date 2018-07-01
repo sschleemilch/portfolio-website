@@ -41,6 +41,8 @@
                                 $returnVal = "is-dark";
                             } elseif (isset($contact)) {
                                 $returnVal = "is-warning";
+                            } elseif (isset($impressum)) {
+                                $returnVal = "is-info";
                             }
                             echo $returnVal
                     ?>

@@ -34,7 +34,8 @@
 								Sebastian Schleemilch &copy; 2017 <br>
 								<small>
 								Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.<br>
-								Website content licensed <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+								Website content licensed <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.<br>
+                                <a href="/impressum.php">Impressum / Privacy Policy</a>
 								</small>
 							</p>
 						</div>
