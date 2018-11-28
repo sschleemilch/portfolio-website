@@ -12,6 +12,8 @@
                 $activeColor = "is-dark";
             } elseif (isset($contact)) {
                 $activeColor = "is-warning";
+            } elseif (isset($impressum)) {
+                $activeColor = "is-primary";
             }
             echo " " . $activeColor;
         ?>
@@ -77,6 +79,8 @@
                                             $activeColor = "is-dark";
                                         } elseif (isset($contact)) {
                                             $activeColor = "is-warning";
+                                        } elseif (isset($impressum)) {
+                                            $activeColor = "is-primary";
                                         }
                                         echo " " . $activeColor;
                                     ?>">

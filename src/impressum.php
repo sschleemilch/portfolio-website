@@ -76,6 +76,7 @@ Email: basti.schleemilch@onlinehome.de</p>
 </section>
 
 <?php
+    $impressum = "is-active";
 	$path = $_SERVER['DOCUMENT_ROOT'];
 	$path .= "/templates/_footer.php";
 	include_once($path)
