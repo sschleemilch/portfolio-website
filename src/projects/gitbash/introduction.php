@@ -13,6 +13,13 @@
 
 <div class="section">
 	<div class="container is-danger">
+        <article class="notification is-danger">
+            Note that this project is deprecated and there exists a follow up project rewritten in C++.<br>
+            The reason for rewriting are performance reasons. Since I am working professionally with quite large repositories, I did switch
+            to a more efficient implementation using the <a href="https://libgit2.org/">libgit2</a> that results in a way faster information gathering
+            that is also faster that a high level <code>git status</code> call.<br>
+            You can find the source code of course as well in github <a href="https://github.com/sschleemilch/cpp-gitbash-powerline">here</a>.
+        </article>
         <div class="content has-text-centered">
             <a class="button is-danger is-outlined" href="https://github.com/sschleemilch/gitbash-powerline">
                         <span class="icon">
@@ -56,7 +63,7 @@
                 reading here. However, if you are interested in building your own Git Bash Prompt extension or just want to use mine, please keep reading. To give the reader a little preview, the result will look like this (for modified files on the "master" branch):
             </p>
             <div class="has-text-centered">
-                <img src="/img/git_bash_preview.png" alt="Git:Bash:Preview" width="500" height="202">
+                <img src="/img/git_bash_preview.PNG" alt="Git:Bash:Preview" width="500" height="202">
             </div>
             <p>
                 This preview only shows a small part of the features that are currently implemented.

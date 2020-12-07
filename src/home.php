@@ -35,11 +35,6 @@
 							<p class="title is-4"> <strong> Projects </strong> </p>
 							<p class="subtitle">Current private projects</p>
 						</a>
-						<a class="column" href="/tools.php">
-							<span class="icon is-large has-text-warning"><i class="fa fa-wrench"></i></span>
-							<p class="title is-4"> <strong> Tools </strong> </p>
-							<p class="subtitle">Project results</p>
-						</a>
 					</div>
 				</div>
 			</div>

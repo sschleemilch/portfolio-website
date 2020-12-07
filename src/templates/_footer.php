@@ -8,8 +8,6 @@
                 $activeColor = "is-success";
             } elseif (isset($projects)) {
                 $activeColor = "is-danger";
-            } elseif (isset($tools)) {
-                $activeColor = "is-dark";
             } elseif (isset($contact)) {
                 $activeColor = "is-warning";
             } elseif (isset($impressum)) {
@@ -33,7 +31,7 @@
 					<div class="column is-one-third">
 						<div class="content">
 							<p>
-								Sebastian Schleemilch &copy; 2017 <br>
+								Sebastian Schleemilch &copy; 2020 <br>
 								<small>
 								Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.<br>
 								Website content licensed <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.<br>
@@ -75,8 +73,6 @@
                                             $activeColor = "is-success";
                                         } elseif (isset($projects)) {
                                             $activeColor = "is-danger";
-                                        } elseif (isset($tools)) {
-                                            $activeColor = "is-dark";
                                         } elseif (isset($contact)) {
                                             $activeColor = "is-warning";
                                         } elseif (isset($impressum)) {

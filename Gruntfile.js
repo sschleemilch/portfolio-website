@@ -55,6 +55,7 @@ module.exports = function(grunt) {
                     {expand: true, flatten:true, src: ['src/projects/*.php'], dest: 'dist/html/projects'},
                     {expand: true, flatten:true, src: ['src/projects/website/*.php'], dest: 'dist/html/projects/website'},
                     {expand: true, flatten:true, src: ['src/projects/gitbash/*.php'], dest: 'dist/html/projects/gitbash'},
+                    {expand: true, flatten:true, src: ['src/projects/gitbashv2/*.php'], dest: 'dist/html/projects/gitbashv2'},
                     {expand: true, flatten:true, src: ['src/data/*'], dest: 'dist/html/data'},
                     {expand: true, flatten:true, src: ['src/php/*.php'], dest: 'dist/html/php'},
                ]
